@@ -10,7 +10,7 @@ const roofTypeMenu=[
 
 export default function NavBar(){
     return(
-        <div className="blue-gradient ">
+        <div className="">
             <div className="max-w-6xl py-8 px-2 mx-auto">
                 <div className="flex items-center justify-between">
                     <Logo/>
