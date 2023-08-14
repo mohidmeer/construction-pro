@@ -15,22 +15,22 @@ export default function NavBar(){
                 <div className="flex items-center justify-between">
                     <Logo/>
                     <nav>
-                        <ul className="flex gap-10">
-                            <li className="font-bold text-white cursor-pointer golden-gradient bg-clip-text hover:text-transparent group ">
+                        <ul className="md:gap-5 lg:gap-10 md:flex hidden ">
+                            <li className="font-bold lg:text-xl text-white cursor-pointer golden-gradient bg-clip-text hover:text-transparent group whitespace-nowrap ">
                                 Our Services
                                 <Menu items={servicesMenu}/>
                             </li>
-                            <li className="font-bold text-white cursor-pointer golden-gradient bg-clip-text hover:text-transparent group">
+                            <li className="font-bold lg:text-xl text-white cursor-pointer golden-gradient bg-clip-text hover:text-transparent group whitespace-nowrap ">
                                 Roof Types
                                 <Menu items={roofTypeMenu}  />  
                             </li>
-                            <li className="font-bold text-white cursor-pointer golden-gradient bg-clip-text hover:text-transparent">
+                            <li className="font-bold lg:text-xl text-white cursor-pointer golden-gradient bg-clip-text hover:text-transparent whitespace-nowrap">
                                 About Us
                             </li>
-                            <li className="font-bold text-white cursor-pointer golden-gradient bg-clip-text hover:text-transparent">
+                            <li className="font-bold lg:text-xl text-white cursor-pointer golden-gradient bg-clip-text hover:text-transparent whitespace-nowrap">
                                 Financing
                             </li>
-                            <li className="font-bold text-white cursor-pointer golden-gradient bg-clip-text hover:text-transparent">
+                            <li className="font-bold lg:text-xl text-white cursor-pointer golden-gradient bg-clip-text hover:text-transparent whitespace-nowrap">
                                 Contact Us
                             </li>
                         </ul>
@@ -50,7 +50,7 @@ export default function NavBar(){
 function Menu({items}){
     return(
       
-    <ul class="hidden absolute  group-hover:flex    text-white  bg-white flex-col gap-2 rounded-md py-2  ">
+    <ul className="hidden absolute  group-hover:flex    text-white  bg-white flex-col gap-2 rounded-md py-2  ">
        {
         items.map((i)=>{
             return(
