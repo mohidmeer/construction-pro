@@ -28,3 +28,12 @@
 
 
 
+.slider {
+  /* Adjust padding, height, colors, and other properties as needed */
+  padding: 10px;
+  height: 10px;
+  background-color: #CBD5E0;
+  border-radius: 10px;
+}
+
+

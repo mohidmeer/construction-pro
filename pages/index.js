@@ -3,6 +3,9 @@ import NavBar from '@/components/Landing/NavBar';
 import Hero from '@/components/Landing/Hero';
 import About from '@/components/Landing/About';
 import Services from '@/components/Landing/Services';
+import PageSection from '@/components/Landing/PageSection';
+import Insurance from '@/components/Landing/Insurance';
+import Pricing from '@/components/Landing/Pricing';
 const locale = await import(`../locales/en.json`);
 
 
@@ -17,6 +20,9 @@ export default function Home() {
       </Hero>
       <About locale={locale} />
       <Services/>
+      <PageSection/>
+      <Insurance/>
+      <Pricing/>  
     </div>
   );
 }
