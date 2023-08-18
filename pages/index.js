@@ -8,6 +8,7 @@ import Insurance from '@/components/Landing/Insurance';
 import Pricing from '@/components/Landing/Pricing';
 import Quotes from '@/components/Landing/Quotes';
 import Install from '@/components/Landing/Install';
+import Process from '@/components/Landing/Process';
 const locale = await import(`../locales/en.json`);
 
 
@@ -26,7 +27,8 @@ export default function Home() {
       <Insurance/>
       <Pricing/>
       <Quotes/>
-      <Install/>  
+      <Install/>
+      <Process/>  
     </div>
   );
 }
