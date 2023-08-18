@@ -27,6 +27,9 @@
 }
 
 
+.brown-gradient {
+ background:  linear-gradient(257.11deg, #242525 16.16%, #6A6A6A 100%)
+}
 
 .slider {
   /* Adjust padding, height, colors, and other properties as needed */

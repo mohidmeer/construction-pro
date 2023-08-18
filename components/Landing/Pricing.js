@@ -84,8 +84,6 @@ export default function Pricing() {
                             Submit
                         </button>
                 </form>
-
-
             </div>
         </div>
     );

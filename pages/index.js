@@ -6,6 +6,8 @@ import Services from '@/components/Landing/Services';
 import PageSection from '@/components/Landing/PageSection';
 import Insurance from '@/components/Landing/Insurance';
 import Pricing from '@/components/Landing/Pricing';
+import Quotes from '@/components/Landing/Quotes';
+import Install from '@/components/Landing/Install';
 const locale = await import(`../locales/en.json`);
 
 
@@ -22,7 +24,9 @@ export default function Home() {
       <Services/>
       <PageSection/>
       <Insurance/>
-      <Pricing/>  
+      <Pricing/>
+      <Quotes/>
+      <Install/>  
     </div>
   );
 }
