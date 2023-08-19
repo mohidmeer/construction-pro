@@ -1,4 +1,6 @@
 import Image from "next/image";
+import { useEffect, useRef, useState } from "react";
+import { Fade, Slide,} from "react-awesome-reveal";
 
 export default function Process() {
 
@@ -15,7 +17,7 @@ export default function Process() {
                         </div>
                         <div className="bg-white p-8 w-1/3">
                             <div className="flex gap-4">
-                                <h2 className="text-red-600 text-5xl  font-bold">1</h2>
+                                <h2 className="text-red-600 text-6xl  font-bold">1</h2>
                                 <p className="text-2xl font-bold">Request a free <br /> inspection</p>
                             </div>
                             <form>
@@ -42,8 +44,13 @@ export default function Process() {
 
                         </div>
                     </div>
+                    <div className="flex justify-center">
+                        <Animation/>
+                    </div>
+                    
 
                 </div>
+
 
 
             </div>
@@ -52,4 +59,95 @@ export default function Process() {
 
     );
 
+}
+
+
+
+function Animation(){
+
+    return(
+        <div className="flex flex-col w-full mt-20 ">
+            <div className="rounded-full bg-gray-100 flex flex-col items-center relative mr-auto ">
+                <Slide >
+                    <AnimationItem/>
+                </Slide>
+            </div>
+            <div className="rounded-full bg-gray-100 flex flex-col items-center relative mx-auto ">
+                <Slide direction="right">
+                    <AnimationItem textAlign="-left-52 top-8" number={3} text="Proposal"/>
+                </Slide>
+            </div>
+            <div className="rounded-full bg-gray-100 flex flex-col items-center relative ml-auto ">
+                <Slide>
+                    <AnimationItem textAlign="-left-56 top-8" number={4} text="Remove Old Shingles"/>
+                </Slide>
+            </div>
+            <div className="rounded-full bg-gray-100 flex flex-col items-center relative mx-auto ">
+                <Slide>
+                    <AnimationItem textAlign="-left-52 top-8" number={5} text="Install New"/>
+                </Slide>
+            </div>
+           
+            
+
+        </div>
+    );
+}
+
+
+
+// function Animation(){
+//     return(
+//     <div className={`h-[70vh] w-full p-2 mt-10 relative `}>
+//         <Fade>
+//             <AnimationItem/>
+//         </Fade>
+//         <Fade>
+//             <AnimationItem alignment="right-10 top-10" textAlign="-bottom-64 -left-10" text="Proposal" number={3}/>
+//         </Fade>
+//         <Fade>
+//             <AnimationItem alignment="left-10 bottom-10" textAlign="-right-56 -bottom-32" text="Remove Old Shingles" number={4}/>
+//         </Fade>
+//         <Fade>
+//             <AnimationItem alignment="right-32 bottom-1" textAlign="-left-52" text="Install New Roof" number={5}/>
+//         </Fade>
+//     </div>
+//     );
+// }
+
+// function AnimationItem({alignment = 'top-28 left-72',textAlign='-top-28',text='Roof Inspection',number=2}){
+//     return(
+//         <div className={`${alignment} absolute  bg-black p-8 rounded-full h-52 w-52 shadow-xl shadow-black/30`} >
+//             <Image src={'/../assets/images/residentialRoofing.jpg'} fill objectFit="cover" className="rounded-full" />
+//             <div className="relative">
+//                 <div className={`absolute ${textAlign} `}>
+//                     <div className="flex gap-2 items-center">
+//                         <h2 className="text-6xl font-bold text-red-500">{number}</h2>
+//                         <h2 className="text-2xl font-bold text-black w-36 ">
+//                             {text}
+//                         </h2>
+//                     </div>
+//                 </div>
+//             </div>
+//         </div>
+//     );
+// }
+function AnimationItem({textAlign='-right-56',text='Roof Inspection',number=2}){
+    return(
+       
+            <div className={` bg-black p-8 rounded-full h-52 w-52 shadow-xl shadow-black/30`} >
+            <Image src={'/../assets/images/residentialRoofing.jpg'} fill objectFit="cover" className="rounded-full" />
+            <div className="relative">
+                <div className={`absolute ${textAlign} `}>
+                    <div className="flex gap-2 items-center">
+                        <h2 className="text-6xl font-bold text-red-500">{number}</h2>
+                        <h2 className="text-2xl font-bold text-black w-36 ">
+                            {text}
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+    );
 }
