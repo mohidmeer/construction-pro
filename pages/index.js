@@ -9,6 +9,10 @@ import Pricing from '@/components/Landing/Pricing';
 import Quotes from '@/components/Landing/Quotes';
 import Install from '@/components/Landing/Install';
 import Process from '@/components/Landing/Process';
+import Repair from '@/components/Landing/Repair';
+import EmergencyRepair from '@/components/Landing/EmergencyRepair';
+import Restoration from '@/components/Landing/Restoration';
+import Commercial from '@/components/Landing/Commercial';
 const locale = await import(`../locales/en.json`);
 
 
@@ -28,7 +32,11 @@ export default function Home() {
       <Pricing/>
       <Quotes/>
       <Install/>
-      <Process/>  
+      <Process/>
+      <Repair/>
+      <EmergencyRepair/>
+      <Restoration/>
+      <Commercial/>  
     </div>
   );
 }

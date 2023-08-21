@@ -5,7 +5,7 @@ import { Fade, Slide,} from "react-awesome-reveal";
 export default function Process() {
 
     return (
-
+        <>
         <div className="relative h-[70vh] mx-auto my-40">
             <Image src={'/../assets/images/shinglework.jpg'} objectFit="cover" fill className=" brightness-50 " />
             <div className="absolute h-full w-full   ">
@@ -35,7 +35,7 @@ export default function Process() {
                                     <span class="sr-only">Choose profile photo</span>
                                     <input type="file" class="block w-full text-sm text-slate-500
                                         file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0  file:text-sm file:font-semibold
-                                      file:bg-orange-100 file:text-or hover:file:bg-orange-200"/>
+                                        file:bg-orange-100 file:text-or hover:file:bg-orange-200"/>
                                 </label>
                                 <button className="border border-black text-black golden-gradient w-full p-2 rounded-md font-bold mt-4">
                                     Submit
@@ -44,18 +44,15 @@ export default function Process() {
 
                         </div>
                     </div>
-                    <div className="flex justify-center">
-                        <Animation/>
-                    </div>
-                    
-
                 </div>
-
-
-
             </div>
-
         </div>
+        <div>
+            <div className="flex justify-center mx-auto max-w-6xl">
+                <Animation/>
+            </div>
+        </div>
+        </>
 
     );
 
