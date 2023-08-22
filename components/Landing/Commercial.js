@@ -6,7 +6,7 @@ import { BiBuildingHouse, BiBuildings } from "react-icons/bi";
 
 export default function Commercial() {
     return (
-        <div className="h-[100vh] w-full relative ">
+        <div className=" w-full relative ">
             <Image src={'/../assets/images/Commercial.jpg'} fill objectFit="cover" className="-z-10  brightness-[0.4] " />
             <div className="max-w-6xl mx-auto p-10">
                     <div className="md:w-1/2 text-white " >

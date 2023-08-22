@@ -13,6 +13,9 @@ import Repair from '@/components/Landing/Repair';
 import EmergencyRepair from '@/components/Landing/EmergencyRepair';
 import Restoration from '@/components/Landing/Restoration';
 import Commercial from '@/components/Landing/Commercial';
+import Articles from '@/components/Landing/Articles';
+import Faqs from '@/components/Landing/Faqs';
+import Reviews from '@/components/Landing/Review';
 const locale = await import(`../locales/en.json`);
 
 
@@ -36,7 +39,10 @@ export default function Home() {
       <Repair/>
       <EmergencyRepair/>
       <Restoration/>
-      <Commercial/>  
+      <Commercial/>
+      <Articles/>
+      <Faqs/> 
+      <Reviews/> 
     </div>
   );
 }

@@ -101,7 +101,7 @@ export function SectionTwo() {
 
 export function Second(){
     return(    
-    <div className="h-[100vh] w-full relative ">
+    <div className=" w-full relative ">
         <Image src={'/../assets/images/Image-Fixed2.webp'} fill objectFit="cover" className="-z-10   "  />
         <div className="w-full ">
                 <div className="max-w-6xl mx-auto  ">      
