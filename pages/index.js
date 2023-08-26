@@ -16,15 +16,13 @@ import Commercial from '@/components/Landing/Commercial';
 import Articles from '@/components/Landing/Articles';
 import Faqs from '@/components/Landing/Faqs';
 import Reviews from '@/components/Landing/Review';
+import Footer from '@/components/Landing/Footer';
 const locale = await import(`../locales/en.json`);
-
-
 
 export default function Home() {
   return (
     <div className=''>
       <TopBar locale={locale} />
-      
       <Hero locale={locale} >
         <NavBar locale={locale} />
       </Hero>
@@ -42,7 +40,8 @@ export default function Home() {
       <Commercial/>
       <Articles/>
       <Faqs/> 
-      <Reviews/> 
+      <Reviews/>
+      <Footer/> 
     </div>
   );
 }

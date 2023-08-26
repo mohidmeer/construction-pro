@@ -1,6 +1,7 @@
 import { BiSolidStar } from "react-icons/bi";
 import { BsGoogle } from "react-icons/bs";
 import { MdStar } from "react-icons/md";
+import { FcGoogle } from "react-icons/fc";
 
 export default function Reviews(){
     return(
@@ -31,22 +32,16 @@ export default function Reviews(){
 
                 </div>
 
-                <div className="grid grid-col-2 gap-4">
-                    <div className="p-4" >
-                        <p>“Herts Construction was absolutely phenomenal..”</p>
-                        <p>Herts Construction was absolutely phenomenal! I was going through a tough time when this transition of fixing our home was happening and Jimmy and his whole team were so helpful throughout the whole process. I would highly recommend if you’re looking for work to be done in your home and on your roof.</p>
-                        <div className="flex justify-between">
-                            <p>- Cyndi Cadence</p>
-                            <div className="flex gap-2 items-center">
-                                <p>Read Review on </p>
-                                
-
-
-                            </div>
-
-                        </div>
-                    </div>
-
+                <div className="grid grid-cols-2 gap-8 mt-4">
+                    <Review/>
+                    <Review/>
+                    <Review/>
+                    <Review/>
+                </div>
+                <div>
+                    <button className=" p-4 border border-black  golden-gradient font-bold mt-4  hover:scale-110 transition-all px-10">
+                        Leave your Review
+                    </button>
 
                 </div>
             </div>
@@ -84,5 +79,24 @@ function Rating({ratingNumber,className}){
     );
 
 
+}
+
+
+function Review (){
+
+   return(
+    <div className="p-8 rounded-xl card-container shadow-xl" >
+        <p className="font-bold text-xl text-left ">“Herts Construction was absolutely phenomenal..”</p>
+        <p>Herts Construction was absolutely phenomenal! I was going through a tough time when this transition of fixing our home was happening and Jimmy and his whole team were so helpful throughout the whole process. I would highly recommend if you’re looking for work to be done in your home and on your roof.</p>
+        <div className="flex justify-between">
+            <p>- Cyndi Cadence</p>
+            <div className="flex gap-2 items-center">
+                <p className="underline font-bold">Read Review on </p>
+                <FcGoogle/>
+                
+            </div>
+        </div>
+    </div>
+   )
 }
 

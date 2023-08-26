@@ -3,6 +3,9 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { FaPhoneAlt } from "react-icons/fa";
 import {MdArrowBack} from "react-icons/md"
+import { useFormik } from 'formik';
+import validator from "@/utils/FormValidator";
+import { createLead } from "@/api";
 
 export default function Hero({ children ,locale}) {
     return (
@@ -54,26 +57,47 @@ function Cta({locale}){
 
 function Form(){
 
+    const formik =useFormik({
+        initialValues:{
+            Last_Name:'',
+            Phone:'',
+            Email:'',
+            Notes : '',
+            Corporation_Zip_Code:"New Roofing",
+        },
+        validate: validator,
+        onSubmit
+
+    })
+    async function onSubmit(values) {
+        createLead(values)
+        // console.log(values)
+    }
+
+
     const [level,setLevel]=useState(1);
     useEffect(()=>{},[level])
 
     return (
         <div>
-            <div className="max-w-sm shadow-md relative ">
+            <div className=" shadow-md relative  ">
                
                 <p className="text-white font-bold text-center red-gradient p-1 ">Get a new roof now <br/> & <span className="underline">delay the payments!</span></p>
-                <form className="bg-white p-8">
+                <form className="bg-white p-8" onSubmit={formik.handleSubmit}>
                 {level ===1 ?  
                     <>
                     <label  className="block mb-2 text-sm font-bold text-gray-900 dark:text-white">What type of roof project are you interested in?</label>
-                    <select id="countries" className="mb-2 border border-gray-300  text-sm rounded-md focus:border-orange-300  block w-full p-2 outline-none  ">
-                        <option defaultValue={'New Roof'}>New Roof</option>
-                        <option value="US">Roof Replacement</option>
-                        <option value="CA">Roof Repair</option>
-                        <option value="FR">Strom Damange</option>
-                        <option value="DE">Siding</option>
-                        <option value="rE">Gutter Replacement</option>
-                        <option value="rE">Others</option>
+                    <select 
+                        id="Corporation_Zip_Code" 
+                        {...formik.getFieldProps("Corporation_Zip_Code")} 
+                        className="mb-2 border border-gray-300  text-sm rounded-md focus:border-orange-300  block w-full p-2 outline-none  ">
+                        <option value={'New Roofing'} >New Roof</option>
+                        <option value="Roof Replacement">Roof Replacement</option>
+                        <option value="Roof Repair">Roof Repair</option>
+                        <option value="Strom Damange">Strom Damange</option>
+                        <option value="Siding">Siding</option>
+                        <option value="Gutter Replacement">Gutter Replacement</option>
+                        <option value="Others">Others</option>
                     </select>
                     <label className="block mb-2 text-sm font-bold text-gray-900 dark:text-white">Would you like to get financing?</label> 
                     <div className="flex items-center mb-4">
@@ -97,18 +121,63 @@ function Form(){
                     </> :
                     <>
                     <p className="mb-4 font-medium text-gray-900 dark:text-white">Your Contact Information</p>
-                    <div className="mb-6 grid grid-cols-2 gap-4  ">
-                        <input className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-md outline-none focus:border-orange-300    p-2" placeholder="Your Name" />
-                        <input className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-md outline-none focus:border-orange-300    p-2" placeholder="Your Phone" />
-                        <input className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-md outline-none focus:border-orange-300    p-2" placeholder="Your Email" />
+                    <div className="grid grid-cols-2 gap-2   ">
+                        <input type="text" id="Lead_Source"  {...formik.getFieldProps("Lead_Source")} className="hidden"/>
+                        <div>
+                            <input 
+                            type="text"
+                            id="Last_Name"
+                            {...formik.getFieldProps("Last_Name")}
+                            className={ `bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-md outline-none focus:border-orange-300 p-2 ${formik.errors.Last_Name && formik.touched.Last_Name? "focus:ring-rose-600 focus:border-rose-600": ""}`} 
+                            placeholder="Your Name" />
+                            {formik.errors.Last_Name && formik.touched.Last_Name ? (
+                                <div className="mt-2 font-bold text-sm text-rose-500">
+                                    {formik.errors.Last_Name}
+                                </div>
+                                ) : (
+                                ''
+                            )}
+                        </div>
+                        <div>
+                            <input 
+                            type="tel"
+                            id="Phone"
+                            {...formik.getFieldProps("Phone")}
+                            className={ `bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-md outline-none focus:border-orange-300 p-2 ${formik.errors.Phone && formik.touched.Phone? "focus:ring-rose-600 focus:border-rose-600": ""}`} 
+                            placeholder="Your Phone" />
+                            {formik.errors.Phone && formik.touched.Phone ? (
+                                <div className="mt-2 font-bold text-sm text-rose-500">
+                                    {formik.errors.Phone}
+                                </div>
+                                ) : (
+                                ''
+                            )}
+                        </div>
+                        <div>
+                            <input 
+                            type="email"
+                            id="Email"
+                            {...formik.getFieldProps("Email")}
+                            className={ `bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-md outline-none focus:border-orange-300 p-2 ${formik.errors.Email && formik.touched.Email? "focus:ring-rose-600 focus:border-rose-600": ""}`} 
+                            placeholder="Your Email" />
+                            {formik.errors.Email && formik.touched.Email ? (
+                                <div className="mt-2 font-bold text-sm text-rose-500">
+                                    {formik.errors.Email}
+                                </div>
+                                ) : (
+                                ''
+                            )}
+                        </div>
+                        
+                       
                     </div>
                     <div className="mb-4">
                         <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Any Comments About your project</label>
-                        <textarea  className="block p-2 w-full border border-orange-300 "></textarea>
+                        <textarea {...formik.getFieldProps("Notes")}  id="Notes" className="block p-2 w-full border border-orange-300 "></textarea>
                     </div>
                     <div className="flex justify-center items-center gap-2">
                     <MdArrowBack className="text-2xl text-orange-300 cursor-pointer" onClick={(e)=>{e.preventDefault(); setLevel(level-1);}} />
-                    <button className="golden-gradient border border-black w-full text-xl font-extrabold rounded-md p-2" onClick={(e)=>{e.preventDefault();}}>
+                    <button type="submit" className="golden-gradient border border-black w-full text-xl font-extrabold rounded-md p-2">
                         Submit
                     </button>
                     </div>

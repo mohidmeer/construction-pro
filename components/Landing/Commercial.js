@@ -51,7 +51,6 @@ export default function Commercial() {
                         </div>
                     </div>
                 </div>
-
             </div>
 
     );
