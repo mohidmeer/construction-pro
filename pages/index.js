@@ -27,7 +27,10 @@ export default function Home() {
         <NavBar locale={locale} />
       </Hero>
       <About locale={locale} />
-      <Services/>
+      <div id="services">
+        <Services/>
+      </div>
+      
       <PageSection/>
       <Insurance/>
       <Pricing/>

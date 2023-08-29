@@ -71,7 +71,7 @@ function Form(){
     })
     async function onSubmit(values) {
         createLead(values)
-        // console.log(values)
+    
     }
 
 

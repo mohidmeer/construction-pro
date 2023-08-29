@@ -1,3 +1,4 @@
+import Link from "next/link"
 
 const servicesMenu=[
     { id:1 , name: 'Residential Roofing' , slug : 'residential-roofing'},
@@ -17,7 +18,7 @@ export default function NavBar(){
                     <nav>
                         <ul className="md:gap-5 lg:gap-10 md:flex hidden ">
                             <li className="font-bold lg:text-xl text-white cursor-pointer golden-gradient bg-clip-text hover:text-transparent group whitespace-nowrap ">
-                                Our Services
+                                <Link href={'/#services'}>Our Services </Link>
                                 <Menu items={servicesMenu}/>
                             </li>
                             <li className="font-bold lg:text-xl text-white cursor-pointer golden-gradient bg-clip-text hover:text-transparent group whitespace-nowrap ">

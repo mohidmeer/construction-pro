@@ -43,7 +43,7 @@ export default async (req, res) => {
         const token = await getAccessToken();
         const response = await axios({
         method:'POST',
-        url: 'https://www.zohoapis.com/crm/v2/Leads', // Zoho API URL
+        url: 'https://www.zohoapis.com/crm/v2/Leads',
         data: body,
         headers: {
             'Authorization':`Bearer ${token}`
