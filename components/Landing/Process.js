@@ -1,14 +1,16 @@
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { Fade, Slide,} from "react-awesome-reveal";
-
+import proc from 'public/images/shinglework.jpg'
+import res from 'public/images/residentialRoofing.jpg'
 export default function Process() {
 
     return <>
     <div className="relative h-[70vh] mx-auto my-40">
         <Image
-            src={'/../assets/images/shinglework.jpg'}
+            src={proc}
             fill
+            alt="process"
             className=" brightness-50 "
             style={{
                 maxWidth: "100%",
@@ -137,9 +139,10 @@ function AnimationItem({textAlign='-right-56',text='Roof Inspection',number=2}){
     return (
         <div className={` bg-black p-8 rounded-full lg:h-52 lg:w-52 w-36 h-36   shadow-xl shadow-black/30`} >
         <Image
-            src={'/../assets/images/residentialRoofing.jpg'}
+            src={res}
             fill
             className="rounded-full"
+            alt="res"
             style={{
                 maxWidth: "100%",
                 objectFit: "cover"

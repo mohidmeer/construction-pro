@@ -3,13 +3,15 @@ import Subtitle from "../Commons/Subtitle";
 import { LiaBuildingSolid } from "react-icons/lia";
 import { FaStore } from "react-icons/fa";
 import { BiBuildingHouse, BiBuildings } from "react-icons/bi";
+import comm from 'public/images/Commercial.jpg'
 
 export default function Commercial() {
     return (
         <div className=" w-full relative ">
             <Image
-                src={'/../assets/images/Commercial.jpg'}
+                src={comm}
                 fill
+                alt="commercial"
                 className="-z-10  brightness-[0.4] "
                 style={{
                     maxWidth: "100%",

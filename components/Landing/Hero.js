@@ -10,7 +10,7 @@ import { createLead } from "@/api";
 export default function Hero({ children ,locale}) {
     return (
         <div className="relative h-[800px]  lg:h-[600px]  bg-center bg-cover bg-no-repeat p-4">
-            <div className="absolute  inset-0 bg-[url('../public/assets/images/hero.jpg')] bg-center bg-cover bg-no-repeat brightness-50"></div>
+            <div className="absolute  inset-0 bg-[url('../public/images/hero.jpg')] bg-center bg-cover bg-no-repeat brightness-50"></div>
             <div className="relative h-full">
                 {children}
                 <div className=" max-w-6xl mx-auto my-16 ">

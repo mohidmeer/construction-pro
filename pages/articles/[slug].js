@@ -19,7 +19,7 @@ export default function Article({slug}) {
 function Banner({title='The Ultimate Guide To Asphalt Shingles',children}){
     return(
         <div className="relative h-[300px]   bg-center bg-cover bg-no-repeat p-4">
-            <div className="absolute  inset-0 bg-[url('../public/assets/images/hero.jpg')] bg-center bg-cover bg-no-repeat brightness-[0.3]"></div>
+            <div className="absolute  inset-0  bg-center bg-cover bg-no-repeat brightness-[0.3]"></div>
             <div className="relative h-full">
                 {children}
                 <div className="text-center mt-10">

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import articleImage from 'public/images/Articles/Roofingjpg.jpg'
 
 export default function Articles(){
     return(
@@ -22,8 +23,9 @@ function Article(){
     return (
         <div className="relative w-full  border card-container rounded-md text-hover-effect    ">
             <Image
-                src={'/../assets/images/Articles/Roofingjpg.jpg'}
+                src={articleImage}
                 fill
+                alt="article"
                 className="rounded-md -z-10 brightness-[0.7]"
                 style={{
                     maxWidth: "100%",

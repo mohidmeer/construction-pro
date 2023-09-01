@@ -1,4 +1,6 @@
 import Image from "next/image";
+import q1 from 'public/images/quotes/1.webp'
+import q2 from 'public/images/quotes/2.webp'
 
 export default function Quotes(){
 
@@ -28,7 +30,7 @@ export default function Quotes(){
                 <div className="relative w-full">
                     <div>
                         <Image
-                            src={'/../assets/images/quotes/1.webp'}
+                            src={q1}
                             width={600}
                             height={400}
                             alt="sizing"
@@ -39,7 +41,7 @@ export default function Quotes(){
                     </div>
                     <div className="absolute w-full h-96 top-44 lg:left-24">
                     <Image
-                        src={'/../assets/images/quotes/2.webp'}
+                        src={q2}
                         fill
                         alt="sizing"
                         style={{

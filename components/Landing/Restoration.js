@@ -3,14 +3,22 @@ import {BsFillHouseFill, BsTools} from 'react-icons/bs'
 import {GiWindow} from 'react-icons/gi'
 import { MdBathtub, MdCheck } from "react-icons/md";
 
+import a1 from 'public/images/awards/1.webp';
+import a2 from 'public/images/awards/2.webp';
+import a3 from 'public/images/awards/3.webp';
+import a4 from 'public/images/awards/4.webp';
+import fxed1 from 'public/images/Image-Fixed.webp';
+import fxed2 from 'public/images/Image-Fixed2.webp';
+
 
 export default function Restoration() {
 
     return <>
     <div className=" w-full relative mt-20">
         <Image
-            src={'/../assets/images/Image-Fixed.webp'}
+            src={fxed1}
             fill
+            alt="fimage"
             style={{
                 maxWidth: "100%",
                 objectFit: "cover"
@@ -60,7 +68,7 @@ export function SectionOne() {
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
             <div className="w-full relative h-20">
                 <Image
-                    src={'/../assets/awards/1.webp'}
+                    src={a1}
                     alt={'award'}
                     fill
                     sizes="100vw"
@@ -70,7 +78,7 @@ export function SectionOne() {
             </div>
             <div className="w-full relative h-20">
                 <Image
-                    src={'/../assets/awards/2.webp'}
+                    src={a2}
                     alt={'award'}
                     fill
                     sizes="100vw"
@@ -80,7 +88,7 @@ export function SectionOne() {
             </div>
             <div className="w-full relative h-20">
                 <Image
-                    src={'/../assets/awards/3.webp'}
+                    src={a3}
                     alt={'award'}
                     fill
                     sizes="100vw"
@@ -91,7 +99,7 @@ export function SectionOne() {
 
             <div className="w-full relative h-20">
                 <Image
-                    src={'/../assets/awards/5.webp'}
+                    src={a4}
                     alt={'award'}
                     fill
                     sizes="100vw"
@@ -132,7 +140,7 @@ export function Second(){
     return (
         <div className=" w-full relative ">
             <Image
-                src={'/../assets/images/Image-Fixed2.webp'}
+                src={fxed2}
                 fill
                 className="-z-10   "
                 style={{

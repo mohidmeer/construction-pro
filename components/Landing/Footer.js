@@ -1,12 +1,14 @@
 import Image from "next/image";
 import Subtitle from "../Commons/Subtitle";
+import fimg from 'public/images/Commercial.jpg'
 
 export default function Footer(){
     return (
         <div className=" w-full relative ">
             <Image
-                src={'/../assets/images/Commercial.jpg'}
+                src={fimg}
                 fill
+                alt="footerimage"
                 className="-z-10  brightness-[0.4] "
                 style={{
                     maxWidth: "100%",

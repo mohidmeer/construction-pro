@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
-
-
 .text-hover-effect {
 
   @apply cursor-pointer  hover:transform hover:translate-x-2 hover:scale-110  delay-100 transition-all ease-linear 

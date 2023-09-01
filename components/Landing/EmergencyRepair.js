@@ -64,8 +64,8 @@ function Slider(){
     return(
     
          <ReactCompareSlider 
-         itemOne={<ReactCompareSliderImage src="/../assets/images/before-2.webp" srcSet="/../assets/images/before-2.webp" alt="Image one" />}
-         itemTwo={<ReactCompareSliderImage src="/../assets/images/after-2.webp" srcSet="/../assets/images/after-2.webp" alt="Image two" />}
+         itemOne={<ReactCompareSliderImage src="/../images/before-2.webp" srcSet="/../images/before-2.webp" alt="Image one" />}
+         itemTwo={<ReactCompareSliderImage src="/../images/after-2.webp" srcSet="/../images/after-2.webp" alt="Image two" />}
                     
     />
 

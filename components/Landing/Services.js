@@ -6,7 +6,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import { residential, commercial, exterior } from "@/staticData";
 import { useEffect, useState } from "react";
-
+import  commer from 'public/images/Commercial.jpg'
 
 
 export default function Services() {
@@ -232,8 +232,9 @@ function Inspection() {
         <div className="text-white p-8">
             <div className=" relative w-full ">
                 <Image
-                    src={'/../assets/images/Commercial.jpg'}
+                    src={commer}
                     fill
+                    alt="no"
                     className="brightness-[0.4]   "
                     style={{
                         maxWidth: "100%",

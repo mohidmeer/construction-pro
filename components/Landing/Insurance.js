@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { MdArrowBack, MdCheck } from "react-icons/md";
-
+import ins from 'public/images/Insurance/background.jpg'
 export default function Insurance(){
 
     const [level,setLevel]=useState(1);
@@ -9,8 +9,9 @@ export default function Insurance(){
     return (
         <div className="relative max-w-6xl mx-auto my-32 rounded-md">
            <Image
-                    src={'/../assets/images/Insurance/background.jpg'}
+                    src={ins}
                     fill
+                    alt="insurance"
                     className="brightness-[0.4]  -z-10  "
                     style={{
                         maxWidth: "100%",

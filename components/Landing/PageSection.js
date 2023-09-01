@@ -1,29 +1,33 @@
 import Image from "next/image";
+import roofInsta from 'public/images/Pages/roofInstallation.jpg'
+import roofrep from 'public/images/Pages/roofRepair.jpg'
+import roofsid from 'public/images/Pages/roofSiding.jpg'
+import roofgut from 'public/images/Pages/roofGutter.jpg'
 
 const Pages= [
     { 
         id:1 ,
         title:'New Roof Installation',
         description:'Our commitment to excellence has been recognized for our ability to handle everything from custom roofs to standard installations. We use only the best materials available, have extensive experience dealing with local building codes.',  
-        Image:'/../assets/images/Pages/roofInstallation.jpg'
+        Image:roofInsta
     },
     { 
         id:2 ,
         title:'Roof Repair',
         description:'Attention homeowners, our expert team specializes in repairing all types of roofs, including asphalt, flat, wood, and flashing roofs. We are dedicated to extending the lifespan of your roof and ensuring its optimal functionality.',  
-        Image:'/../assets/images/Pages/roofRepair.jpg'
+        Image:roofrep
     },
     { 
         id:3 ,
         title:'Siding Replacement',
         description:'Attention homeowners! Restore the appearance and functionality of your home with our top-notch roof siding repair services. Our skilled and experienced team is here to assist you.',  
-        Image:'/../assets/images/Pages/roofSiding.jpg'
+        Image:roofsid
     },
     { 
         id:4 ,
         title:'Gutters Replacement',
         description:'Homeowners, ensure the safety of your home by preventing water damage and maintaining a well-maintained roof through our professional gutter repair services.',  
-        Image:'/../assets/images/Pages/roofGutter.jpg'
+        Image:roofgut
     },
 ]
 
@@ -37,6 +41,7 @@ export default function PageSection(){
                         <Image
                             src={p.Image}
                             width={500}
+                            alt="service"
                             height={100}
                             className="rounded-md hover:transform hover:scale-110  transition-all duration-200  "
                             style={{

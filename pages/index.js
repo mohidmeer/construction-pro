@@ -1,4 +1,23 @@
-import {About, Articles, Commercial, EmergencyRepair, Faqs, Footer, Hero, Install, Insurance, NavBar, PageSection, Pricing, Process, Quotes, Repair, Restoration, Reviews, Services, TopBar} from '@/components/Landing';
+import {
+  About, 
+  Articles, 
+  Commercial, 
+  EmergencyRepair, 
+  Faqs, 
+  Footer, 
+  Hero, 
+  Install, 
+  Insurance, 
+  NavBar, 
+  PageSection, 
+  Pricing, 
+  Process, 
+  Quotes, 
+  Repair, 
+  Restoration, 
+  Reviews, 
+  Services, 
+  TopBar} from '@/components/Landing';
 
 
 const locale = await import(`../locales/en.json`);

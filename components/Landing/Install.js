@@ -3,7 +3,8 @@ import { ReactCompareSlider, ReactCompareSliderImage } from 'react-compare-slide
 import {BiPurchaseTag } from "react-icons/bi";
 import {GrInstall } from "react-icons/gr";
 import { MdCategory, MdRoofing, MdUpdate } from "react-icons/md";
-
+import shn from 'public/images/shingleGuide.webp'
+import shingle from 'public/images/shingle.webp'
 export default function Install(){
     return (
         <div className="w-full brown-gradient my-20 max-w-6xl mx-auto">
@@ -26,7 +27,7 @@ export default function Install(){
                 </div>
                 <div className="w-full relative">
                         <Image
-                            src={'/../assets/images/shingle.webp'}
+                            src={shingle}
                             width={1000}
                             height={1000}
                             alt="shingle"
@@ -93,7 +94,7 @@ export default function Install(){
                     <div className="relative">
                         <div className=" ">
                              <Image
-                                 src={'/../assets/images/shingleGuide.webp'}
+                                 src={shn}
                                  className=""
                                  height={300}
                                  width={700}
@@ -122,8 +123,10 @@ function Slider(){
     return(
     
          <ReactCompareSlider 
-         itemOne={<ReactCompareSliderImage src="/../assets/images/before-2.webp" srcSet="/../assets/images/before-2.webp" alt="Image one" />}
-         itemTwo={<ReactCompareSliderImage src="/../assets/images/after-2.webp" srcSet="/../assets/images/after-2.webp" alt="Image two" />}
+         itemOne={<ReactCompareSliderImage src="/../images/before-2.webp" srcSet="/../images/before-2.webp" alt="Image one" />}
+         itemTwo={<ReactCompareSliderImage src="/../images/after-2.webp" srcSet="/../images/after-2.webp" alt="Image two" />
+        
+        }
                     
     />
 

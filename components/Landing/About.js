@@ -1,5 +1,13 @@
 import Image from "next/image";
-
+import award1 from 'public/images/awards/1.webp'
+import award2 from 'public/images/awards/2.webp'
+import award3 from 'public/images/awards/3.webp'
+import award4 from 'public/images/awards/4.webp'
+import award5 from 'public/images/awards/5.webp'
+import award6 from 'public/images/awards/6.webp'
+import award7 from 'public/images/awards/7.webp'
+import award8 from 'public/images/awards/8.webp'
+import about from  'public/images/about.jpg'
 
 export default function About({locale,className}){ 
     return (
@@ -12,7 +20,7 @@ export default function About({locale,className}){
                     <div className="grid grid-cols-3 sm:grid-cols-4 gap-2">
                         <div className="w-full relative h-20">
                             <Image
-                                src={'/../assets/awards/1.webp'}
+                                src={award1}
                                 alt={'award'}
                                 fill
                                 sizes="100vw"
@@ -22,7 +30,7 @@ export default function About({locale,className}){
                         </div>
                         <div className="w-full relative h-20">
                             <Image
-                                src={'/../assets/awards/2.webp'}
+                                src={award2}
                                 alt={'award'}
                                 fill
                                 sizes="100vw"
@@ -32,7 +40,7 @@ export default function About({locale,className}){
                         </div>
                         <div className="w-full relative h-20">
                             <Image
-                                src={'/../assets/awards/3.webp'}
+                                src={award3}
                                 alt={'award'}
                                 fill
                                 sizes="100vw"
@@ -42,7 +50,7 @@ export default function About({locale,className}){
                         </div>
                         <div className="w-full relative h-20">
                             <Image
-                                src={'/../assets/awards/4.webp'}
+                                src={award4}
                                 alt={'award'}
                                 fill
                                 sizes="100vw"
@@ -52,7 +60,7 @@ export default function About({locale,className}){
                         </div>
                         <div className="w-full relative h-20">
                             <Image
-                                src={'/../assets/awards/5.webp'}
+                                src={award5}
                                 alt={'award'}
                                 fill
                                 sizes="100vw"
@@ -62,7 +70,7 @@ export default function About({locale,className}){
                         </div>
                         <div className="w-full relative h-20">
                             <Image
-                                src={'/../assets/awards/6.webp'}
+                                src={award6}
                                 alt={'award'}
                                 fill
                                 sizes="100vw"
@@ -72,7 +80,7 @@ export default function About({locale,className}){
                         </div>
                         <div className="w-full relative h-20">
                             <Image
-                                src={'/../assets/awards/7.webp'}
+                                src={award7}
                                 alt={'award'}
                                 fill
                                 sizes="100vw"
@@ -82,7 +90,7 @@ export default function About({locale,className}){
                         </div>
                         <div className="w-full relative h-20">
                             <Image
-                                src={'/../assets/awards/8.webp'}
+                                src={award8}
                                 alt={'award'}
                                 fill
                                 sizes="100vw"
@@ -98,7 +106,7 @@ export default function About({locale,className}){
                 <div className=" w-full h-full relative hidden lg:block" >
                     <Image
                         alt='Mountains'
-                        src='/../assets/images/about.jpg'
+                        src={about}
                         className="rounded-md"
                         fill
                         sizes="100vw"
