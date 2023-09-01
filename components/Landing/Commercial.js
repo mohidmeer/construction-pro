@@ -1,4 +1,4 @@
-import Image from "next/legacy/image";
+import Image from "next/image";
 import Subtitle from "../Commons/Subtitle";
 import { LiaBuildingSolid } from "react-icons/lia";
 import { FaStore } from "react-icons/fa";
@@ -7,7 +7,14 @@ import { BiBuildingHouse, BiBuildings } from "react-icons/bi";
 export default function Commercial() {
     return (
         <div className=" w-full relative ">
-            <Image src={'/../assets/images/Commercial.jpg'} fill objectFit="cover" className="-z-10  brightness-[0.4] " />
+            <Image
+                src={'/../assets/images/Commercial.jpg'}
+                fill
+                className="-z-10  brightness-[0.4] "
+                style={{
+                    maxWidth: "100%",
+                    objectFit: "cover"
+                }} />
             <div className="max-w-6xl mx-auto p-10">
                     <div className="md:w-1/2 text-white " >
                         <Subtitle text={'Commercial Roofing'}/>
@@ -52,6 +59,5 @@ export default function Commercial() {
                     </div>
                 </div>
             </div>
-
     );
 } 

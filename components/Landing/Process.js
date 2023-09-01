@@ -1,60 +1,64 @@
-import Image from "next/legacy/image";
+import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { Fade, Slide,} from "react-awesome-reveal";
 
 export default function Process() {
 
-    return (
-        <>
-        <div className="relative h-[70vh] mx-auto my-40">
-            <Image src={'/../assets/images/shinglework.jpg'} objectFit="cover" fill className=" brightness-50 " />
-            <div className="absolute h-full w-full   ">
-                <div className="mx-auto max-w-6xl h-full">
-                    <div className="flex flex-col mt-40 h-full gap-20">
-                        <div>
-                            <p className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-tr   from-orange-300 to-orange-500 mb-4">---- Our Process</p>
-                            <h2 className="text-6xl font-bold text-white">5 Easy <span className="shadow-white/50 shadow-xl red-gradient px-2">steps</span></h2>
+    return <>
+    <div className="relative h-[70vh] mx-auto my-40">
+        <Image
+            src={'/../assets/images/shinglework.jpg'}
+            fill
+            className=" brightness-50 "
+            style={{
+                maxWidth: "100%",
+                objectFit: "cover"
+            }} />
+        <div className="absolute h-full w-full   ">
+            <div className="mx-auto max-w-6xl h-full">
+                <div className="flex flex-col mt-40 h-full gap-20">
+                    <div>
+                        <p className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-tr   from-orange-300 to-orange-500 mb-4">---- Our Process</p>
+                        <h2 className="text-6xl font-bold text-white whitespace-nowrap">5 Easy <span className="shadow-white/50 shadow-xl red-gradient px-2">steps</span></h2>
+                    </div>
+                    <div className="bg-white p-8 lg:w-1/3">
+                        <div className="flex gap-4">
+                            <h2 className="text-red-600 text-6xl  font-bold">1</h2>
+                            <p className="text-2xl font-bold whitespace-nowrap">Request a free <br /> inspection</p>
                         </div>
-                        <div className="bg-white p-8 w-1/3">
-                            <div className="flex gap-4">
-                                <h2 className="text-red-600 text-6xl  font-bold">1</h2>
-                                <p className="text-2xl font-bold">Request a free <br /> inspection</p>
+                        <form>
+                            <div className="my-4">
+                                <textarea placeholder='I need Help With' className="block p-2 w-full border border-orange-300 text-black  "></textarea>
                             </div>
-                            <form>
-                                <div className="my-4">
-                                    <textarea placeholder='I need Help With' className="block p-2 w-full border border-orange-300 text-black  "></textarea>
-                                </div>
-                                <p className="mb-4 font-medium text-gray-900 dark:text-white">Your Contact Information</p>
-                                <div className="mb-6 grid grid-cols-2 gap-4  ">
-                                    <input className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-md outline-none focus:border-orange-300    p-2" placeholder="Your Name" />
-                                    <input className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-md outline-none focus:border-orange-300    p-2" placeholder="Your Phone" />
-                                    <input className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-md outline-none focus:border-orange-300    p-2" placeholder="Your Email" />
-                                </div>
-                                <p className="mb-4 font-medium text-gray-900 dark:text-white">Attach Photos If any</p>
-                                <label class="block">
-                                    <span class="sr-only">Choose profile photo</span>
-                                    <input type="file" class="block w-full text-sm text-slate-500
-                                        file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0  file:text-sm file:font-semibold
-                                        file:bg-orange-100 file:text-or hover:file:bg-orange-200"/>
-                                </label>
-                                <button className="border border-black text-black golden-gradient w-full p-2 rounded-md font-bold mt-4">
-                                    Submit
-                                </button>
-                            </form>
+                            <p className="mb-4 font-medium text-gray-900 dark:text-white">Your Contact Information</p>
+                            <div className="mb-6 grid grid-cols-2 gap-4  ">
+                                <input className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-md outline-none focus:border-orange-300    p-2" placeholder="Your Name" />
+                                <input className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-md outline-none focus:border-orange-300    p-2" placeholder="Your Phone" />
+                                <input className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-md outline-none focus:border-orange-300    p-2" placeholder="Your Email" />
+                            </div>
+                            <p className="mb-4 font-medium text-gray-900 dark:text-white">Attach Photos If any</p>
+                            <label class="block">
+                                <span class="sr-only">Choose profile photo</span>
+                                <input type="file" class="block w-full text-sm text-slate-500
+                                    file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0  file:text-sm file:font-semibold
+                                    file:bg-orange-100 file:text-or hover:file:bg-orange-200"/>
+                            </label>
+                            <button className="border border-black text-black golden-gradient w-full p-2 rounded-md font-bold mt-4">
+                                Submit
+                            </button>
+                        </form>
 
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div>
-            <div className="flex justify-center mx-auto max-w-6xl">
-                <Animation/>
-            </div>
+    </div>
+    <div>
+        <div className="flex justify-center mx-auto max-w-6xl mt-32">
+            <Animation/>
         </div>
-        </>
-
-    );
+    </div>
+    </>;
 
 }
 
@@ -71,17 +75,17 @@ function Animation(){
             </div>
             <div className="rounded-full bg-gray-100 flex flex-col items-center relative mx-auto ">
                 <Slide direction="right">
-                    <AnimationItem textAlign="-left-52 top-8" number={3} text="Proposal"/>
+                    <AnimationItem textAlign="lg:-left-52 -left-32   top-8" number={3} text="Proposal"/>
                 </Slide>
             </div>
-            <div className="rounded-full bg-gray-100 flex flex-col items-center relative ml-auto ">
+            <div className="rounded-full bg-gray-100 flex flex-col items-center relative ml-auto   ">
                 <Slide>
-                    <AnimationItem textAlign="-left-56 top-8" number={4} text="Remove Old Shingles"/>
+                    <AnimationItem textAlign="lg:-left-56 -left-36     top-8" number={4} text="Remove Old Shingles"/>
                 </Slide>
             </div>
             <div className="rounded-full bg-gray-100 flex flex-col items-center relative mx-auto ">
                 <Slide>
-                    <AnimationItem textAlign="-left-52 top-8" number={5} text="Install New"/>
+                    <AnimationItem textAlign="-left-36 lg:-left-52 top-8" number={5} text="Install New"/>
                 </Slide>
             </div>
            
@@ -130,21 +134,26 @@ function Animation(){
 //     );
 // }
 function AnimationItem({textAlign='-right-56',text='Roof Inspection',number=2}){
-    return(
-       
-            <div className={` bg-black p-8 rounded-full h-52 w-52 shadow-xl shadow-black/30`} >
-            <Image src={'/../assets/images/residentialRoofing.jpg'} fill objectFit="cover" className="rounded-full" />
-            <div className="relative">
-                <div className={`absolute ${textAlign} `}>
-                    <div className="flex gap-2 items-center">
-                        <h2 className="text-6xl font-bold text-red-500">{number}</h2>
-                        <h2 className="text-2xl font-bold text-black w-36 ">
-                            {text}
-                        </h2>
-                    </div>
+    return (
+        <div className={` bg-black p-8 rounded-full lg:h-52 lg:w-52 w-36 h-36   shadow-xl shadow-black/30`} >
+        <Image
+            src={'/../assets/images/residentialRoofing.jpg'}
+            fill
+            className="rounded-full"
+            style={{
+                maxWidth: "100%",
+                objectFit: "cover"
+            }} />
+        <div className="relative">
+            <div className={`absolute ${textAlign} `}>
+                <div className="flex gap-2 items-center">
+                    <h2 className="lg:text-6xl font-bold text-red-500">{number}</h2>
+                    <h2 className="lg:text-2xl font-bold text-black w-36 ">
+                        {text}
+                    </h2>
                 </div>
             </div>
         </div>
-      
+    </div>
     );
 }

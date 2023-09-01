@@ -1,10 +1,10 @@
-import Image from "next/legacy/image";
+import Image from "next/image";
 
 export default function Quotes(){
 
     return (
         <div className="max-w-6xl mx-auto my-20 ">
-            <div className="flex justify-between gap-20 ">
+            <div className="flex lg:flex-row flex-col justify-between gap-20 ">
                 <div className="flex-col flex  w-full">
                     <p className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-tr   from-orange-300 to-orange-500 mb-4">New Roof Install</p>
                     <h2 className="text-6xl font-extrabold leading-[1.2]    ">Accurate <br/> Aerial <span className="red-gradient text-white px-2">Quotes</span> </h2>
@@ -27,10 +27,26 @@ export default function Quotes(){
                 </div>
                 <div className="relative w-full">
                     <div>
-                        <Image src={'/../assets/images/quotes/1.webp'} width={600} height={400} alt="sizing" />
+                        <Image
+                            src={'/../assets/images/quotes/1.webp'}
+                            width={600}
+                            height={400}
+                            alt="sizing"
+                            style={{
+                                maxWidth: "100%",
+                               
+                            }} />
                     </div>
-                    <div className="absolute w-full h-96 top-44 left-24">
-                    <Image src={'/../assets/images/quotes/2.webp'} fill objectFit="cover" alt="sizing" />
+                    <div className="absolute w-full h-96 top-44 lg:left-24">
+                    <Image
+                        src={'/../assets/images/quotes/2.webp'}
+                        fill
+                        alt="sizing"
+                        style={{
+                            maxWidth: "100%",
+                    
+                            objectFit: "cover"
+                        }} />
                     </div>
 
 
@@ -40,7 +56,7 @@ export default function Quotes(){
 
 
 
-            <div className="flex justify-center gap-10 items-center my-10  max-w-2xl mx-auto">
+            <div className="flex justify-center gap-10 items-center my-10  max-w-2xl mx-auto lg:flex-row flex-col mt-[300px] lg:mt-10     ">
                 <p className="font-bold text-2xl text-left w-1/2">
                 Get your<br/> <span className="font-extrabold">Aerial Quote</span> 
                 </p>

@@ -1,4 +1,4 @@
-import Image from "next/legacy/image";
+import Image from "next/image";
 
 const Pages= [
     { 
@@ -34,7 +34,14 @@ export default function PageSection(){
                 Pages.map(p=>(
                 <div key={p.id}>
                     <div>
-                        <Image src={p.Image} width={500} height={100} className="rounded-md hover:transform hover:scale-110  transition-all duration-200  " />
+                        <Image
+                            src={p.Image}
+                            width={500}
+                            height={100}
+                            className="rounded-md hover:transform hover:scale-110  transition-all duration-200  "
+                            style={{
+                                maxWidth: "100%",
+                            }} />
                      </div>   
                     <p className="text-center font-bold text-2xl mt-2 ">{p.title}</p>
                     <p className="p-2 text-center text-sm font-semibold text-gray-500">{p.description}</p>

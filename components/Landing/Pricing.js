@@ -16,7 +16,7 @@ export default function Pricing() {
             <h2 className="text-5xl font-extrabold mb-4 ">Affordable Pricing <span className="red-gradient text-white">Options</span></h2>
             <p className="text-xl text-gray-600">Get the high-quality roof your family deserves, with <br />a low, affordable monthly commitment.</p>
             <div>
-                <div className="w-1/2 mx-auto mt-4">
+                <div className="lg:w-1/2 w-4/5   mx-auto mt-4">
                     <label for="range" className="font-bold text-gray-600">Swipe in estimated cost</label>
                     <div className="flex gap-4 items-center">
                         <p className="font-bold text-3xl text-red-500">$5K</p>
@@ -28,7 +28,7 @@ export default function Pricing() {
                         <p className="font-bold text-3xl shadow-black/20 shadow-xl p-4 rounded-md text-red-500">{'$' + sliderValue}</p>
                     </div>
                 </div>
-                <div className="grid grid-cols-3 gap-4 mt-8">
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mt-8">
                     <div className="p-4 border-2 border-dotted relative rounded-xl">
                         <div className="flex justify-center absolute -top-3 w-full">
                             <p className=" bg-[#d9d9d9] px-4 -translate-x-4 inline  rounded-full ">Option 1</p>
@@ -74,7 +74,7 @@ export default function Pricing() {
                     </div>
                 </div>
             </div>
-            <div className="flex justify-center gap-10 items-center my-10  max-w-2xl mx-auto">
+            <div className="flex lg:flex-row flex-col justify-center gap-10 items-center my-10  max-w-2xl mx-auto">
                 <p className="font-bold text-2xl text-left w-1/2">
                 Check if,<br/> <span className="font-extrabold">you’re qualified</span> 
                 </p>

@@ -1,5 +1,5 @@
 import { Tab, Transition } from "@headlessui/react";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
 import 'swiper/css';
@@ -24,7 +24,7 @@ export default function Services() {
 
 
     return (
-        <div className="bg-[#1c223b]  max-w-6xl  mx-auto rounded-md mt-6">
+        <div className="bg-[#1c223b]  max-w-6xl  mx-auto rounded-md mt-6 ">
             <h2 className="text-6xl font-extrabold text-center text-white p-8 select-none " draggable='false' >Our Services</h2>
             <div className="w-full  mx-auto px-2 py-4 sm:px-0 text-white">
                 <Tab.Group>
@@ -65,7 +65,15 @@ function Residential({ services }) {
                             <SwiperSlide key={r.id}>
                                 <div className="w-full h-[600px]">
                                     <div className="relative w-full h-full">
-                                        <Image src={r.image} alt="Residential Roofing" layout='fill' objectFit='cover' className="rounded-md brightness-75   " />
+                                        <Image
+                                            src={r.image}
+                                            alt="Residential Roofing"
+                                            className="rounded-md brightness-75   "
+                                            fill
+                                            sizes="100vw"
+                                            style={{
+                                                objectFit: "cover"
+                                            }} />
                                         <div className="absolute text-white bottom-2 p-8 max-w-sm">
                                             <p className="text-3xl font-bold">
                                                 <span className="text-orange-300">0{r.id}.</span> {r.name}
@@ -77,13 +85,13 @@ function Residential({ services }) {
                                     </div>
                                 </div>
                             </SwiperSlide>
-                        )
+                        );
                     })
 
                 }
             </Slider>
         </div>
-    )
+    );
 }
 function Commercial({ services }) {
 
@@ -96,7 +104,15 @@ function Commercial({ services }) {
                             <SwiperSlide key={r.id}>
                                 <div className="w-full h-[600px]">
                                     <div className="relative w-full h-full">
-                                        <Image src={r.image} alt="Residential Roofing" layout='fill' objectFit='cover' className="rounded-md brightness-75   " />
+                                        <Image
+                                            src={r.image}
+                                            alt="Residential Roofing" 
+                                            className="rounded-md brightness-75   "
+                                            fill
+                                            sizes="100vw"
+                                            style={{
+                                                objectFit: "cover"
+                                            }} />
                                         <div className="absolute text-white bottom-2 p-8 max-w-sm">
                                             <p className="text-3xl font-bold">
                                                 <span className="text-orange-300">0{r.id}.</span> {r.name}
@@ -108,13 +124,13 @@ function Commercial({ services }) {
                                     </div>
                                 </div>
                             </SwiperSlide>
-                        )
+                        );
                     })
 
                 }
             </Slider>
         </div>
-    )
+    );
 }
 function Exterior({ services }) {
 
@@ -127,7 +143,15 @@ function Exterior({ services }) {
                             <SwiperSlide key={r.id}>
                                 <div className="w-full h-[600px]">
                                     <div className="relative w-full h-full">
-                                        <Image src={r.image} alt="Residential Roofing" layout='fill' objectFit='cover' className="rounded-md brightness-75   " />
+                                        <Image
+                                            src={r.image}
+                                            alt="Residential Roofing"
+                                            className="rounded-md brightness-75   "
+                                            fill
+                                            sizes="100vw"
+                                            style={{
+                                                objectFit: "cover"
+                                            }} />
                                         <div className="absolute text-white bottom-2 p-8 max-w-sm">
                                             <p className="text-3xl font-bold">
                                                 <span className="text-orange-300">0{r.id}.</span> {r.name}
@@ -139,13 +163,13 @@ function Exterior({ services }) {
                                     </div>
                                 </div>
                             </SwiperSlide>
-                        )
+                        );
                     })
 
                 }
             </Slider>
         </div>
-    )
+    );
 }
 
 function Slider({ children }) {
@@ -205,18 +229,28 @@ function Inspection() {
 
 
     return (
-        <div className="text-white p-8 ">
-            <div className=" relative w-full h-[1000px]">
-                <Image src={'/../assets/images/worker.jpg'} alt="Residential Roofing" layout='fill' objectFit='cover' className="rounded-md brightness-[0.3]  " />
-                <div className="absolute p-8">
-                    <p className="font-semibold  "><span className="text-orange-300">5 REASONS</span> TO GET A ROOF INSPECTION</p>
-                    <h2 className="text-6xl font-extrabold underline"><span className="text-orange-300">Roof</span> Inspection</h2>
-                    <div className="flex ">
+        <div className="text-white p-8">
+            <div className=" relative w-full ">
+                <Image
+                    src={'/../assets/images/Commercial.jpg'}
+                    fill
+                    className="brightness-[0.4]   "
+                    style={{
+                        maxWidth: "100%",
+                        objectFit: "cover"
+                    }} />
+                <div className="p-8">
+                   
+                    <div className="lg:flex-row flex-col flex">
                         <div className="flex flex-col gap-6 mt-10 ">
+                        <div className="z-30">
+                             <p className="font-semibold "><span className="text-orange-300 ">5 REASONS</span> TO GET A ROOF INSPECTION</p>
+                            <h2 className="text-6xl font-extrabold underline z-40"><span className="text-orange-300">Roof</span> Inspection</h2>
+                        </div>
                             {
                                 reasons.map((r) => {
                                     return (
-                                        <div key={r.id} className="flex flex-col gap-4">
+                                        <div key={r.id} className="flex flex-col gap-4 z-20">
                                             <p className="font-extrabold text-2xl max-w-md"><span className="text-orange-300">0{r.id}.</span>{r.title}</p>
                                             <p className="text-lg">{r.description}</p>
                                         </div>
@@ -226,7 +260,7 @@ function Inspection() {
 
 
                         </div>
-                        <div className="border-2 border-orange-300 rounded-lg    w-full  border-dashed    mt-auto p-6">
+                        <div className="border-2 border-orange-300 rounded-lg    w-full  border-dashed    mt-auto p-6 z-20">
                             <p className="text-2xl">Get Your <br/><span className="font-bold">Free Roof Inspection</span></p>
                             <form className="p-2 flex gap-4">
                              <input className="bg-gray-50 border border-gray-300 w-full  text-gray-900 text-sm rounded-sm  outline-none focus:border-orange-300 p-2" placeholder="Your Phone" />

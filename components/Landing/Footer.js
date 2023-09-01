@@ -1,10 +1,17 @@
-import Image from "next/legacy/image";
+import Image from "next/image";
 import Subtitle from "../Commons/Subtitle";
 
 export default function Footer(){
     return (
         <div className=" w-full relative ">
-            <Image src={'/../assets/images/Commercial.jpg'} fill objectFit="cover" className="-z-10  brightness-[0.4] " />
+            <Image
+                src={'/../assets/images/Commercial.jpg'}
+                fill
+                className="-z-10  brightness-[0.4] "
+                style={{
+                    maxWidth: "100%",
+                    objectFit: "cover"
+                }} />
             <div className="flex flex-col  justify-center">
                 <div className="mx-auto max-w-5xl flex lg:flex-row flex-col justify-between">
                     <div className="text-white mt-32 ">
@@ -30,5 +37,5 @@ export default function Footer(){
                 </div>
             </div>
         </div>
-    ) ;
+    );
 }

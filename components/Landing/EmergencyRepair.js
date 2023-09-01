@@ -5,7 +5,7 @@ import { MdCategory, MdRoofing, MdUpdate } from "react-icons/md";
 export default function EmergencyRepair(){
     return(
         <div className="max-w-6xl mx-auto mt-20">
-            <div className="flex mt-8 gap-20 ">
+            <div className="flex mt-8 gap-20 flex-col lg:flex-row ">
                     <div className="w-full">
                         <Slider/>
                     </div>

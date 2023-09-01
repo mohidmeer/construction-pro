@@ -1,11 +1,11 @@
-import Image from "next/legacy/image";
+import Image from "next/image";
 import { ReactCompareSlider, ReactCompareSliderImage } from 'react-compare-slider';
 import {BiPurchaseTag } from "react-icons/bi";
 import {GrInstall } from "react-icons/gr";
 import { MdCategory, MdRoofing, MdUpdate } from "react-icons/md";
 
 export default function Install(){
-    return(
+    return (
         <div className="w-full brown-gradient my-20 max-w-6xl mx-auto">
             <div className="flex justify-between  p-8 ">
                 <div className="w-full">
@@ -25,15 +25,24 @@ export default function Install(){
                    </div>
                 </div>
                 <div className="w-full relative">
-                        <Image src={'/../assets/images/shingle.webp'} width={1000} height={1000} alt="shingle" className="absolute left-24 top-16 "/>
+                        <Image
+                            src={'/../assets/images/shingle.webp'}
+                            width={1000}
+                            height={1000}
+                            alt="shingle"
+                            className="absolute left-24 top-16 md:block hidden "
+                            style={{
+                                maxWidth: "100%",
+                                height: "auto"
+                            }} />
                 </div>
             </div>
             <div className="p-8 bg-[#eff3f7] ">
-                <div className="flex items-center justify-center mt-20 gap-4 mb-10">
+                <div className="flex flex-col lg:flex-row items-center justify-center mt-20 gap-4 mb-10">
                     <h2 className="text-6xl font-bold text-center">Install... </h2>
                     <h2 className=" text-6xl font-bold text-center red-gradient p-2 text-white -skew-y-3 ">to Impress!</h2>
                 </div>
-                <div className="flex mt-8 gap-20 ">
+                <div className="flex mt-8 gap-20 flex-col lg:flex-row ">
                     <div className="w-full">
                         <Slider/>
                     </div>
@@ -80,13 +89,22 @@ export default function Install(){
                     </div>
                     
                 </div>
-                <div className="flex gap-20  mt-20 ">
+                <div className="flex gap-20  mt-20 lg:flex-row flex-col ">
                     <div className="relative">
-                        <div className=" h-[300px] w-[600px]">
-                             <Image src={'/../assets/images/shingleGuide.webp'} className=""  height={300} width={700} alt="guide"/>
+                        <div className=" ">
+                             <Image
+                                 src={'/../assets/images/shingleGuide.webp'}
+                                 className=""
+                                 height={300}
+                                 width={700}
+                                 alt="guide"
+                                 style={{
+                                     maxWidth: "100%",
+                                     height: "auto"
+                                 }} />
                         </div>
                     </div>
-                    <div className="flex gap-2 flex-col">
+                    <div className="flex gap-2 flex-col lg:mt-0 ">
                         <h3 className="text-2xl">Download our free<br/><span className="font-bold">Roofing Shingles Guide </span> </h3>
                         <button className="p-4 golden-gradient font-bold text-xl border border-black hover:brightness-90">
                             Download 
@@ -95,7 +113,7 @@ export default function Install(){
                 </div>
             </div>
         </div>
-    )
+    );
 }
 
 

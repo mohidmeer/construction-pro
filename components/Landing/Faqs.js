@@ -2,8 +2,8 @@ export default function Faqs() {
     return (
         <div className="max-w-6xl blue-gradient mx-auto rounded-xl mt-20 ">
             <div className="py-20 w-3/4 mx-auto ">
-                <div className="flex gap-8 text-white items-center">
-                    <div className="border-r px-10 border-dashed border-orange-200">
+                <div className="flex lg:flex-row flex-col gap-8 text-white items-center">
+                    <div className="lg:border-r px-10 border-dashed border-orange-200">
                         <h2 className="font-bold text-[80px] text-orange-200 ">FAQs</h2>
                     </div>
                     <p>

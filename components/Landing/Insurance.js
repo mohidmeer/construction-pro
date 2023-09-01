@@ -1,4 +1,4 @@
-import Image from "next/legacy/image";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import { MdArrowBack, MdCheck } from "react-icons/md";
 
@@ -7,11 +7,18 @@ export default function Insurance(){
     const [level,setLevel]=useState(1);
     useEffect(()=>{},[level])
     return (
-        <div className="relative max-w-6xl h-[50vh] mx-auto my-32 rounded-md">
-            <Image src={'/../assets/images/Insurance/background.jpg' }  objectFit="cover" fill className="rounded-lg brightness-50 "  />
-            <div className="absolute text-white h-full ">
-                <div className="flex justify-between gap-10 h-full">
-                    <div className="flex flex-col justify-end h-full pl-10 pb-6">
+        <div className="relative max-w-6xl mx-auto my-32 rounded-md">
+           <Image
+                    src={'/../assets/images/Insurance/background.jpg'}
+                    fill
+                    className="brightness-[0.4]  -z-10  "
+                    style={{
+                        maxWidth: "100%",
+                        objectFit: "cover"
+                    }} />
+            <div className=" text-white h-full ">
+                <div className="lg:flex-row flex-col flex justify-between gap-10 h-full">
+                    <div className="flex flex-col justify-end h-full pr-10 lg:pr-0 pl-10 pb-6 mt-24  lg:mt-12">
                         <h2 className="text-6xl font-bold">Need Insurance <br/> Claim Help?</h2>
                         <ul className="mt-4 flex-col flex gap-4  max-w-lg">
                             <div className="flex gap-2 items-start">
@@ -85,9 +92,8 @@ export default function Insurance(){
                     
                 </div>
             </div>
-            <h2 className="text-5xl text-white red-gradient font-extrabold absolute p-2 -top-6 left-10">Storm Damage</h2>
+            <h2 className="text-5xl text-white red-gradient font-extrabold absolute p-2 -top-6 lg:left-10">Storm Damage</h2>
 
         </div>
-
     );
 }

@@ -7,32 +7,32 @@ export default function Reviews(){
     return(
         <div className="max-w-6xl mx-auto my-20 ">
             <div className="text-center">
-                <h2 className=" sm:text-4xl lg:text-6xl  font-bold">Our Reputation Speaks for Itself</h2>
+                <h2 className=" text-4xl lg:text-6xl  font-bold">Our Reputation Speaks for Itself</h2>
                 <p className="mt-4 font-bold">Read what our happy customers are saying about their<br/> experience of working with us.</p>
 
-                <div className="w-3/4 mx-auto">
-                   <div className="grid sm:grid-cols-2  lg:grid-cols-3 gap-4  mt-4  ">
+                <div className="w-4/5   mx-auto">
+                   <div className="grid grid-cols-1  lg:grid-cols-3 gap-20    mt-4  ">
                         <div className="text-red-500">
                             <Rating  ratingNumber={4.6}/>
-                            <p className="mr-16 font-bold">GOOGLE </p>
-                            <p className="mr-16 font-bold">4.6 STARS </p>
+                            <p className=" font-bold">GOOGLE </p>
+                            <p className=" font-bold">4.6 STARS </p>
                         </div>
                         <div className="text-red-500">
                             <Rating  ratingNumber={4.3}/>
-                            <p className="mr-16 font-bold">YELP </p>
-                            <p className="mr-16 font-bold">4.3 STARS </p>
+                            <p className=" font-bold">YELP </p>
+                            <p className=" font-bold">4.3 STARS </p>
                         </div>
                         <div className="text-red-500">
                             <Rating  ratingNumber={4.4}/>
-                            <p className="mr-16 font-bold">FACEBOOK</p>
-                            <p className="mr-16 font-bold">4.4 STARS </p>
+                            <p className=" font-bold">FACEBOOK</p>
+                            <p className=" font-bold">4.4 STARS </p>
                         </div>
                         
                     </div>
 
                 </div>
 
-                <div className="grid grid-cols-2 gap-8 mt-4">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-4">
                     <Review/>
                     <Review/>
                     <Review/>
@@ -56,7 +56,7 @@ function Rating({ratingNumber,className}){
     const rating= [];
 
     for (let i = 0; i < Math.ceil(ratingNumber); i++) {
-        rating.push(<BiSolidStar key={i} size={32} className="fill-orange-300" />);
+        rating.push(<BiSolidStar key={i} size={64} className="fill-orange-300" />);
       }
 
     return(
@@ -69,7 +69,7 @@ function Rating({ratingNumber,className}){
             <div className=" absolute top-0 -z-10 w-full">
                 <div className="flex gap-2 justify-start">
                     {Array.from({ length: 5 }, (_, index) => (
-                        <BiSolidStar key={index} size={32} className="fill-gray-300" />
+                        <BiSolidStar key={index} size={64} className="fill-gray-300" />
                     ))}
                 </div>
             </div>            

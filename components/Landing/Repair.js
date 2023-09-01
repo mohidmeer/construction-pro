@@ -13,7 +13,7 @@ export default function Repair() {
                 <p className="font-bold text-2xl text-left ml-4">
                     Get your<br/> <span className="font-extrabold">Free Roof Inspection</span> 
                 </p>
-                <form className="p-4 flex gap-4  rounded-lg w-full">
+                <form className="p-4 flex lg:flex-row flex-col gap-4  rounded-lg w-full">
                     <input className="text-lg text-gray-700 font-semibold bg-gray-50 border border-gray-300 w-full   rounded-sm  outline-none focus:border-orange-300 p-2" placeholder="Your Address" />
                         <button className="golden-gradient border border-black font-bold text-black px-4 rounded-md " onClick={(e)=>{e.preventDefault();}}>
                             Submit
@@ -24,7 +24,7 @@ export default function Repair() {
         </div>
         <div className="flex-col flex gap-4 bg-[#1e1e1e] p-8 w-full rounded-2xl ">
             <p className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-tr   from-orange-300 to-orange-500 mb-4">---- Emergency Repair</p>
-            <h2 className="text-5xl font-bold  ">
+            <h2 className="text-4xl lg:text-5xl font-bold  ">
             
             <span className=" text-white  red-gradient px-2">Emergency</span>     
             <span className="text-white">Repair</span></h2>
@@ -34,7 +34,7 @@ export default function Repair() {
                 <p className="font-bold text-2xl ml-4 text-white">
                     Get your<br/> <span className="font-extrabold">Free Roof Inspection</span> 
                 </p>
-                <form className="p-4 flex gap-4  rounded-lg w-full">
+                <form className="p-4 flex flex-col lg:flex-row gap-4  rounded-lg w-full">
                     <input className="text-lg text-gray-700 font-semibold bg-gray-50 border border-gray-300 w-full   rounded-sm  outline-none focus:border-orange-300 p-2" placeholder="Your Address" />
                         <button className="golden-gradient border border-black font-bold text-black px-4 rounded-md " onClick={(e)=>{e.preventDefault();}}>
                             Submit

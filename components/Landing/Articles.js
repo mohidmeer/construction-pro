@@ -1,4 +1,4 @@
-import Image from "next/legacy/image";
+import Image from "next/image";
 
 export default function Articles(){
     return(
@@ -19,13 +19,20 @@ export default function Articles(){
 
 function Article(){
 
-    return(
+    return (
         <div className="relative w-full  border card-container rounded-md text-hover-effect    ">
-            <Image src={'/../assets/images/Articles/Roofingjpg.jpg'} fill objectFit="cover" className="rounded-md -z-10 brightness-[0.7]"/>
+            <Image
+                src={'/../assets/images/Articles/Roofingjpg.jpg'}
+                fill
+                className="rounded-md -z-10 brightness-[0.7]"
+                style={{
+                    maxWidth: "100%",
+                    objectFit: "cover"
+                }} />
             <div className="flex flex-col justify-end h-full p-4 text-white">
-                <p className="text-2xl font-bold ">The 3 Best Types of Roofing Shingles: Which One Is Right For You?</p>
+                <p className=" text-xl lg:text-2xl font-bold ">The 3 Best Types of Roofing Shingles: Which One Is Right For You?</p>
                 <p className=" underline ">Read More</p>
             </div>
         </div>
-    )
+    );
 }
