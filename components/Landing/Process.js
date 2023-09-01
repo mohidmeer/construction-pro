@@ -1,8 +1,8 @@
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { Fade, Slide,} from "react-awesome-reveal";
-import proc from 'public/images/shinglework.jpg'
-import res from 'public/images/residentialRoofing.jpg'
+import proc from '@/public/images/shinglework.jpg'
+import res from '@/public/images/residentialRoofing.jpg'
 export default function Process() {
 
     return <>

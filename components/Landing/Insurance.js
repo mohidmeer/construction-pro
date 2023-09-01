@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { MdArrowBack, MdCheck } from "react-icons/md";
-import ins from 'public/images/Insurance/background.jpg'
+import ins from '@/public/images/Insurance/background.jpg'
 export default function Insurance(){
 
     const [level,setLevel]=useState(1);

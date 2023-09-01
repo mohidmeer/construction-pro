@@ -6,7 +6,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import { residential, commercial, exterior } from "@/staticData";
 import { useEffect, useState } from "react";
-import  commer from 'public/images/Commercial.jpg'
+import  commer from '@/public/images/Commercial.jpg'
 
 
 export default function Services() {

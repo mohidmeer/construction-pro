@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Subtitle from "../Commons/Subtitle";
-import fimg from 'public/images/Commercial.jpg'
+import fimg from '@/public/images/Commercial.jpg'
 
 export default function Footer(){
     return (

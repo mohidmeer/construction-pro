@@ -3,8 +3,8 @@ import { ReactCompareSlider, ReactCompareSliderImage } from 'react-compare-slide
 import {BiPurchaseTag } from "react-icons/bi";
 import {GrInstall } from "react-icons/gr";
 import { MdCategory, MdRoofing, MdUpdate } from "react-icons/md";
-import shn from 'public/images/shingleGuide.webp'
-import shingle from 'public/images/shingle.webp'
+import shn from '@/public/images/shingleGuide.webp'
+import shingle from '@/public/images/shingle.webp'
 export default function Install(){
     return (
         <div className="w-full brown-gradient my-20 max-w-6xl mx-auto">

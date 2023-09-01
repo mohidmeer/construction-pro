@@ -1,6 +1,6 @@
 import Image from "next/image";
-import q1 from 'public/images/quotes/1.webp'
-import q2 from 'public/images/quotes/2.webp'
+import q1 from '@/public/images/quotes/1.webp'
+import q2 from '@/public/images/quotes/2.webp'
 
 export default function Quotes(){
 

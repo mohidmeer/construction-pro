@@ -1,13 +1,13 @@
 import Image from "next/image";
-import award1 from 'public/images/awards/1.webp'
-import award2 from 'public/images/awards/2.webp'
-import award3 from 'public/images/awards/3.webp'
-import award4 from 'public/images/awards/4.webp'
-import award5 from 'public/images/awards/5.webp'
-import award6 from 'public/images/awards/6.webp'
-import award7 from 'public/images/awards/7.webp'
-import award8 from 'public/images/awards/8.webp'
-import about from  'public/images/about.jpg'
+import award1 from '@/public/images/awards/1.webp'
+import award2 from '@/public/images/awards/2.webp'
+import award3 from '@/public/images/awards/3.webp'
+import award4 from '@/public/images/awards/4.webp'
+import award5 from '@/public/images/awards/5.webp'
+import award6 from '@/public/images/awards/6.webp'
+import award7 from '@/public/images/awards/7.webp'
+import award8 from '@/public/images/awards/8.webp'
+import about from  '@/public/images/about.jpg'
 
 export default function About({locale,className}){ 
     return (

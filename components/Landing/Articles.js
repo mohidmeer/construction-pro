@@ -1,5 +1,5 @@
 import Image from "next/image";
-import articleImage from 'public/images/Articles/Roofingjpg.jpg'
+import articleImage from '@/public/images/Articles/Roofingjpg.jpg'
 
 export default function Articles(){
     return(

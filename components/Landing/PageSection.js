@@ -1,8 +1,8 @@
 import Image from "next/image";
-import roofInsta from 'public/images/Pages/roofInstallation.jpg'
-import roofrep from 'public/images/Pages/roofRepair.jpg'
-import roofsid from 'public/images/Pages/roofSiding.jpg'
-import roofgut from 'public/images/Pages/roofGutter.jpg'
+import roofInsta from '@/public/images/Pages/roofInstallation.jpg'
+import roofrep from '@/public/images/Pages/roofRepair.jpg'
+import roofsid from '@/public/images/Pages/roofSiding.jpg'
+import roofgut from '@/public/images/Pages/roofGutter.jpg'
 
 const Pages= [
     { 

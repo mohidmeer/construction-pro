@@ -3,12 +3,12 @@ import {BsFillHouseFill, BsTools} from 'react-icons/bs'
 import {GiWindow} from 'react-icons/gi'
 import { MdBathtub, MdCheck } from "react-icons/md";
 
-import a1 from 'public/images/awards/1.webp';
-import a2 from 'public/images/awards/2.webp';
-import a3 from 'public/images/awards/3.webp';
-import a4 from 'public/images/awards/4.webp';
-import fxed1 from 'public/images/Image-Fixed.webp';
-import fxed2 from 'public/images/Image-Fixed2.webp';
+import a1 from '@/public/images/awards/1.webp';
+import a2 from '@/public/images/awards/2.webp';
+import a3 from '@/public/images/awards/3.webp';
+import a4 from '@/public/images/awards/4.webp';
+import fxed1 from '@/public/images/Image-Fixed.webp';
+import fxed2 from '@/public/images/Image-Fixed2.webp';
 
 
 export default function Restoration() {

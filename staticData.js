@@ -1,6 +1,6 @@
-import comm from  'public/images/commercialRoofing.jpg';
-import res from  'public/images/residentialRoofing.jpg';
-import ext from  'public/images/exteriorSiding.jpg';
+import comm from  '@/public/images/commercialRoofing.jpg';
+import res from  '@/public/images/residentialRoofing.jpg';
+import ext from  '@/public/images/exteriorSiding.jpg';
 
 
 export const commercial = [
