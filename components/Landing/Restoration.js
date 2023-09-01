@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/legacy/image";
 import {BsFillHouseFill, BsTools} from 'react-icons/bs'
 import {GiWindow} from 'react-icons/gi'
 import { MdBathtub, MdCheck } from "react-icons/md";

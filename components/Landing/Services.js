@@ -1,5 +1,5 @@
 import { Tab, Transition } from "@headlessui/react";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
 import 'swiper/css';

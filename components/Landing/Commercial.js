@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Subtitle from "../Commons/Subtitle";
 import { LiaBuildingSolid } from "react-icons/lia";
 import { FaStore } from "react-icons/fa";

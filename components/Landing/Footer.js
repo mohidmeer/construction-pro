@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Subtitle from "../Commons/Subtitle";
 
 export default function Footer(){
