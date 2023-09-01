@@ -3,7 +3,7 @@ import Subtitle from "../Commons/Subtitle";
 import { LiaBuildingSolid } from "react-icons/lia";
 import { FaStore } from "react-icons/fa";
 import { BiBuildingHouse, BiBuildings } from "react-icons/bi";
-import comm from '@/public/images/Commercial.jpg'
+import comm from '@/public/images/commercial.jpg'
 
 export default function Commercial() {
     return (
