@@ -49,7 +49,7 @@ export default function Insurance(){
                         </div>
                         <div className="border border-dashed border-orange-300 bg-white">
                             <div className="p-4 flex flex-col gap-3">
-                                <h2 className="text-center text-red-500 text-4xl font-extrabold">SPEAK WITH<br/> AN EXPERT</h2>
+                                <h2 className="text-center text-secondary text-4xl font-extrabold">SPEAK WITH<br/> AN EXPERT</h2>
                                 <p className="text-center text-black font-extrabold ">ON INSURANCE CLAIMS</p>
                                 <p className="text-xs leading-tight text-black text-center">Find out who’s responsible <br/> for the restoration costs</p>
                             </div>

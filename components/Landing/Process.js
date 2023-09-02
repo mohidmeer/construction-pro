@@ -125,7 +125,7 @@ function Animation(){
 //             <div className="relative">
 //                 <div className={`absolute ${textAlign} `}>
 //                     <div className="flex gap-2 items-center">
-//                         <h2 className="text-6xl font-bold text-red-500">{number}</h2>
+//                         <h2 className="text-6xl font-bold text-secondary">{number}</h2>
 //                         <h2 className="text-2xl font-bold text-black w-36 ">
 //                             {text}
 //                         </h2>
@@ -150,7 +150,7 @@ function AnimationItem({textAlign='-right-56',text='Roof Inspection',number=2}){
         <div className="relative">
             <div className={`absolute ${textAlign} `}>
                 <div className="flex gap-2 items-center">
-                    <h2 className="lg:text-6xl font-bold text-red-500">{number}</h2>
+                    <h2 className="lg:text-6xl font-bold text-secondary">{number}</h2>
                     <h2 className="lg:text-2xl font-bold text-black w-36 ">
                         {text}
                     </h2>

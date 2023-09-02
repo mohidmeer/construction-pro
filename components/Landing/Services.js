@@ -24,7 +24,7 @@ export default function Services() {
 
 
     return (
-        <div className="bg-[#1c223b]  max-w-6xl  mx-auto rounded-md mt-6 ">
+        <div className="blue-gradient  max-w-6xl  mx-auto rounded-md mt-6 ">
             <h2 className="text-6xl font-extrabold text-center text-white p-8 select-none " draggable='false' >Our Services</h2>
             <div className="w-full  mx-auto px-2 py-4 sm:px-0 text-white">
                 <Tab.Group>
