@@ -142,6 +142,7 @@ export function Second(){
             <Image
                 src={fxed2}
                 fill
+                alt="backgroud-image"
                 className="-z-10   "
                 style={{
                     maxWidth: "100%",
