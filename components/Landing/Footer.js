@@ -49,7 +49,7 @@ export default function Footer({form=true}){
                         <Link href={'/'}  className="mr-4 hover:underline md:mr-6 ">Home</Link>
                     </li>
                     <li>
-                        <Link href="/Linkbout-us" className="mr-4 hover:underline md:mr-6 ">About</Link>
+                        <Link href="/about-us" className="mr-4 hover:underline md:mr-6 ">About</Link>
                     </li>
                     <li>
                         <Link href="/contact-us" className="hover:underline">Contact</Link>
