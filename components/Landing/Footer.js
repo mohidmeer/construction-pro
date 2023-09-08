@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Subtitle from "../Commons/Subtitle";
 import fimg from '@/public/images/commercial.jpg'
+import Link from "next/link";
 
 export default function Footer({form=true}){
     return (
@@ -41,17 +42,17 @@ export default function Footer({form=true}){
             </div>
             <footer className="shadow mt-4 bg-green-900  dark:bg-gray-800 text-white">
                 <div className="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
-                <span className="text-sm sm:text-center ">© 2023 <a  className="hover:underline">HostbuildingGroup</a>. All Rights Reserved.
+                <span className="text-sm sm:text-center ">© 2023 <Link href={'/'}  className="hover:underline">HostbuildingGroup</Link>. All Rights Reserved.
                 </span>
                 <ul className="flex flex-wrap items-center mt-3 text-sm font-medium  sm:mt-0">
                     <li>
-                        <a href={'/'}  className="mr-4 hover:underline md:mr-6 ">Home</a>
+                        <Link href={'/'}  className="mr-4 hover:underline md:mr-6 ">Home</Link>
                     </li>
                     <li>
-                        <a href="/about-us" className="mr-4 hover:underline md:mr-6 ">About</a>
+                        <Link href="/Linkbout-us" className="mr-4 hover:underline md:mr-6 ">About</Link>
                     </li>
                     <li>
-                        <a href="/contact-us" className="hover:underline">Contact</a>
+                        <Link href="/contact-us" className="hover:underline">Contact</Link>
                     </li>
                     
                 </ul>
