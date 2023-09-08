@@ -45,8 +45,6 @@ export default function Services() {
                         </Tab.Panel>
                     </Tab.Panels>
                 </Tab.Group>
-
-
             </div>
             <Inspection />
 

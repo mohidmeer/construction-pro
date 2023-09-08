@@ -26,13 +26,13 @@ export default function NavBar(){
                                 <Menu items={roofTypeMenu}  />  
                             </li>
                             <li className="font-bold lg:text-xl text-white cursor-pointer golden-gradient bg-clip-text hover:text-transparent whitespace-nowrap">
-                                About Us
+                                <Link href={'/about-us'}>About Us</Link>
                             </li>
                             <li className="font-bold lg:text-xl text-white cursor-pointer golden-gradient bg-clip-text hover:text-transparent whitespace-nowrap">
                                 Financing
                             </li>
                             <li className="font-bold lg:text-xl text-white cursor-pointer golden-gradient bg-clip-text hover:text-transparent whitespace-nowrap">
-                                Contact Us
+                                <Link href={'/contact-us'}>Contact Us</Link>
                             </li>
                         </ul>
                     </nav>
@@ -68,9 +68,9 @@ function Menu({items}){
 function Logo(){
 
     return (
-        <div className="font-bold text-white">
+        <Link href={'/'} className="font-bold text-white  text-hover-effect hover:text-orange-200">
             Host Building Group
 
-        </div>
+        </Link>
     )
 }

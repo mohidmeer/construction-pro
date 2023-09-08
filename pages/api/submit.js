@@ -36,7 +36,7 @@ const getAccessToken = async () => {
 
 
 
-export default async (req, res) => {
+export default async function handler (req, res) {
     const {  body } = req;
   
     try {

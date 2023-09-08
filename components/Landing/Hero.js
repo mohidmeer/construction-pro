@@ -7,7 +7,7 @@ import { useFormik } from 'formik';
 import validator from "@/utils/FormValidator";
 import { createLead } from "@/api";
 
-export default function Hero({ children ,locale}) {
+export default function Hero({ children,locale,form=true,title='New Jersey Trusted Roofing Contractor'}) {
     return (
         <div className="relative h-[800px]  lg:h-[600px]  bg-center bg-cover bg-no-repeat p-4">
             <div className="absolute  inset-0 bg-[url('../public/images/hero.jpg')] bg-center bg-cover bg-no-repeat brightness-50"></div>
@@ -16,13 +16,17 @@ export default function Hero({ children ,locale}) {
                 <div className=" max-w-6xl mx-auto my-16 ">
                     <div className="flex flex-col lg:flex-row justify-between w-full ">
                         <div >
-                            <Cta locale={locale}/>
+                            <Cta locale={locale} title={title}/>
                         </div>
                         <div className="flex-col gap-4 flex" >
-                            <div>
-                                <p className="text-white font-bold text-3xl text-left lg:text-center my-10">0% interest <br/>  & Easy payment</p>
-                            </div>
-                            <Form/>
+                            
+                            { form ? 
+                            <>
+                                <div>
+                                    <p className="text-white font-bold text-3xl text-left lg:text-center my-10">0% interest <br/>  & Easy payment</p>
+                                </div>
+                                <Form/>
+                            </> :''}
                         </div>
                     </div>
                 </div>
@@ -31,10 +35,10 @@ export default function Hero({ children ,locale}) {
     )
 }
 
-function Cta({locale}){
+function Cta({locale,title}){
     return (
         <div className="flex flex-col gap-4 max-w-[450px] ">
-            <p className="text-transparent bg-clip-text golden-gradient font-bold ml-auto ">New Jersey Trusted Roofing Contractor</p>
+            <p className="text-transparent bg-clip-text golden-gradient font-bold ml-auto ">{title}</p>
             <p className="text-white text-4xl leading-snug lg:text-5xl font-extrabold lg:leading-snug">Protecting what<br/> matters <span className="red-gradient"> the most</span> </p>
             <p className="text-white mt-2 md:block hidden">Whether you&#39;re in need of a full roof replacement or a roof  repair, you can count on our expert team to get the job done.</p>
             <div className="flex justify-center md:justify-between">
