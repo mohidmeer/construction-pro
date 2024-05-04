@@ -11,7 +11,7 @@ export default function TopBar() {
           <div className='golden-gradient py-2 px-10 '>
             <button className='flex items-center justify-center gap-2 text-black hover:text-white transition-all duration-300  '>
               <FaPhoneAlt className='text-2xl' />
-              <p className='font-bold text-2xl'>090078601</p>
+              <p className='font-bold text-2xl'>561-830-8252</p>
             </button>
           </div>
         </div>

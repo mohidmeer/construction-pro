@@ -2,13 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+
+html{
+  @apply text-[#333333]
+}
+
 .text-hover-effect {
 
   @apply cursor-pointer  hover:transform hover:translate-x-2 hover:scale-110  delay-100 transition-all ease-linear 
 }
 
 .blue-gradient{
-   @apply  bg-green-800
+   @apply  bg-primary
 
  /* background: linear-gradient(90deg, #13192C 0%, #13192C 0.02%, #505D84 58.18%, #13192C 78.66%) */
 
@@ -23,7 +28,7 @@
 
 .red-gradient{
  /* background: linear-gradient(89.7deg, #EC4F42 0.24%, #E22C58 99.74%), #D9D9D9 */
- @apply bg-green-800
+ @apply bg-primary
 }
 
 
@@ -48,11 +53,11 @@
 }
 
 .text-secondary{
-  @apply text-green-800
+  @apply text-primary
 }
 
 .accent-secondary{
 
-  @apply accent-green-800
+  @apply accent-primary
 
 }

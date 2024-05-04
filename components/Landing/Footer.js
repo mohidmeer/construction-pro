@@ -2,6 +2,7 @@ import Image from "next/image";
 import Subtitle from "../Commons/Subtitle";
 import fimg from '@/public/images/commercial.jpg'
 import Link from "next/link";
+import logoSvg from '@/public/images/logo.svg'
 
 export default function Footer({form=true}){
     return (
@@ -40,10 +41,11 @@ export default function Footer({form=true}){
                     </form> : <div className="flex-col  w-full h-[500px]" ></div>}
                 </div>
             </div>
-            <footer className="shadow mt-4 bg-green-900  dark:bg-gray-800 text-white">
-                <div className="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
-                <span className="text-sm sm:text-center ">© 2023 <Link href={'/'}  className="hover:underline">HostbuildingGroup</Link>. All Rights Reserved.
-                </span>
+            <footer className="shadow mt-4 bg-primary text-white">
+                <div className="flex justify-between container mx-auto ">
+                <div>
+                    <Logo/>
+                </div>
                 <ul className="flex flex-wrap items-center mt-3 text-sm font-medium  sm:mt-0">
                     <li>
                         <Link href={'/'}  className="mr-4 hover:underline md:mr-6 ">Home</Link>
@@ -57,7 +59,32 @@ export default function Footer({form=true}){
                     
                 </ul>
                 </div>
+                
+                <p className="text-sm text-center ">© 2023 <Link href={'/'}  className="hover:underline">BERG GCC</Link>. All Rights Reserved.
+                </p>
             </footer>
         </div>
     );
 }
+
+
+function Logo() {
+
+    return (
+        <Link href={'/'} className="font-bold text-primary bg-white   flex flex-col mt-2">
+
+            <Image src={logoSvg} alt="Berg" width={150} className="ml-3" />
+            <div className="p-2">
+                <p className=" tracking-wide">General Contractors</p>
+
+                <div className="text-center flex items-center justify-center gap-4  ">
+                <p>CGC</p>
+                <p>1535671</p>
+
+                </div>
+            </div>
+
+        </Link>
+    )
+}
+

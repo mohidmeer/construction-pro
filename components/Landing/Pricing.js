@@ -38,7 +38,7 @@ export default function Pricing() {
                         </h2>
                         <p className="text-4xl  font-extrabold">and SAVE 10%!</p>
                         <div className="mt-4 p-2 shadow-black flex justify-center">
-                            <p className="font-bold text-3xl shadow-black/20 shadow-xl py-4 px-10 rounded-lg  text-green-500">{'$' + (sliderValue - Math.ceil(sliderValue * 0.10))}</p>
+                            <p className="font-bold text-3xl shadow-black/20 shadow-xl py-4 px-10 rounded-lg  text-primary">{'$' + (sliderValue - Math.ceil(sliderValue * 0.10))}</p>
                         </div>
                         <hr className="my-6" />
                         <p className="text-2xl font-bold" >Save <span className="text-secondary font-extrabold">{'$' + Math.ceil(sliderValue * 0.10)}</span> </p>
@@ -53,7 +53,7 @@ export default function Pricing() {
                         </h2>
                         <p className="text-4xl  font-extrabold">0% INTEREST</p>
                         <div className="mt-4 p-2 shadow-black flex justify-center">
-                            <p className="font-bold text-3xl shadow-black/20 shadow-xl py-4 px-10 rounded-lg  text-green-500">{'$' + (Math.ceil(sliderValue / 12))}<span className="text-black">/mo.</span> </p>
+                            <p className="font-bold text-3xl shadow-black/20 shadow-xl py-4 px-10 rounded-lg  text-primary">{'$' + (Math.ceil(sliderValue / 12))}<span className="text-black">/mo.</span> </p>
                         </div>
                         <hr className="my-6" />
                         <p className="text-2xl font-bold" >1 Year, $0 Down</p>
@@ -67,7 +67,7 @@ export default function Pricing() {
                         </h2>
                         <p className="text-4xl  font-extrabold">PAYMENT PLAN</p>
                         <div className="mt-4 p-2 shadow-black flex justify-center">
-                            <p className="font-bold text-3xl shadow-black/20 shadow-xl py-4 px-10 rounded-lg  text-green-500">{'$' + (Math.ceil(sliderValue / (120)))}<span className="text-black">/mo.</span> </p>
+                            <p className="font-bold text-3xl shadow-black/20 shadow-xl py-4 px-10 rounded-lg  text-primary">{'$' + (Math.ceil(sliderValue / (120)))}<span className="text-black">/mo.</span> </p>
                         </div>
                         <hr className="my-6" />
                         <p className="text-2xl font-bold" >10 Year, $0 Down</p>

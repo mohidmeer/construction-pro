@@ -6,7 +6,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import { residential, commercial, exterior } from "@/staticData";
 import { useEffect, useState } from "react";
-import  commer from '@/public/images/commercial.jpg'
+import commer from '@/public/images/commercial.jpg'
 
 
 export default function Services() {
@@ -24,10 +24,26 @@ export default function Services() {
 
 
     return (
-        <div className="blue-gradient  max-w-6xl  mx-auto rounded-md mt-6 ">
-            <h2 className="text-6xl font-extrabold text-center text-white p-8 select-none " draggable='false' >Our Services</h2>
-            <div className="w-full  mx-auto px-2 py-4 sm:px-0 text-white">
-                <Tab.Group>
+        <div className=" container  mx-auto rounded-md mt-6 ">
+            <h2 className="text-6xl font-extrabold text-center  p-8  " draggable='false' >Services</h2>
+            <div className="w-full  mx-auto px-2 py-4 sm:px-0  grid md:grid-cols-2 ">
+                <div>
+                    <h3 className="text-4xl font-extrabold text-center p-8 text-primary  " draggable='false' >Residentail</h3>
+                    <Residential services={residential} />
+                </div>
+
+                <div>
+                    <h3 className="text-4xl font-extrabold text-center p-8  text-primary  " draggable='false' >Commercial</h3>
+                    <Commercial services={commercial} />
+                </div>
+
+                <div className="col-span-2   ">
+                    <h3 className="text-4xl font-extrabold text-center p-8 text-primary  " draggable='false' >Exterior</h3>
+                    <Exterior services={exterior} />
+                </div>
+
+
+                {/* <Tab.Group>
                     <Tab.List className={`flex gap-4 justify-center`}>
                         <Tab className={({ selected }) => tabClasses(selected)}>Residentail</Tab>
                         <Tab className={({ selected }) => tabClasses(selected)}>Commercial</Tab>
@@ -44,9 +60,12 @@ export default function Services() {
                             <Exterior services={exterior} />
                         </Tab.Panel>
                     </Tab.Panels>
-                </Tab.Group>
+                </Tab.Group> */}
             </div>
-            <Inspection />
+            <div className="">
+                <Inspection />
+
+            </div>
 
         </div>
     );
@@ -104,7 +123,7 @@ function Commercial({ services }) {
                                     <div className="relative w-full h-full">
                                         <Image
                                             src={r.image}
-                                            alt="Residential Roofing" 
+                                            alt="Residential Roofing"
                                             className="rounded-md brightness-75   "
                                             fill
                                             sizes="100vw"
@@ -239,13 +258,13 @@ function Inspection() {
                         objectFit: "cover"
                     }} />
                 <div className="p-8">
-                   
+
                     <div className="lg:flex-row flex-col flex">
                         <div className="flex flex-col gap-6 mt-10 ">
-                        <div className="z-30">
-                             <p className="font-semibold "><span className="text-orange-300 ">5 REASONS</span> TO GET A ROOF INSPECTION</p>
-                            <h2 className="text-6xl font-extrabold underline z-40"><span className="text-orange-300">Roof</span> Inspection</h2>
-                        </div>
+                            <div className="z-30">
+                                <p className="font-semibold "><span className="text-orange-300 ">5 REASONS</span> TO GET A ROOF INSPECTION</p>
+                                <h2 className="text-6xl font-extrabold underline z-40"><span className="text-orange-300">Roof</span> Inspection</h2>
+                            </div>
                             {
                                 reasons.map((r) => {
                                     return (
@@ -260,12 +279,12 @@ function Inspection() {
 
                         </div>
                         <div className="border-2 border-orange-300 rounded-lg    w-full  border-dashed    mt-auto p-6 z-20">
-                            <p className="text-2xl">Get Your <br/><span className="font-bold">Free Roof Inspection</span></p>
+                            <p className="text-2xl">Get Your <br /><span className="font-bold">Free Roof Inspection</span></p>
                             <form className="p-2 flex gap-4">
-                             <input className="bg-gray-50 border border-gray-300 w-full  text-gray-900 text-sm rounded-sm  outline-none focus:border-orange-300 p-2" placeholder="Your Phone" />
-                             <button className="golden-gradient border border-black  text-black px-4 rounded-md " onClick={(e)=>{e.preventDefault();}}>
-                                 Submit
-                            </button>
+                                <input className="bg-gray-50 border border-gray-300 w-full  text-gray-900 text-sm rounded-sm  outline-none focus:border-orange-300 p-2" placeholder="Your Phone" />
+                                <button className="golden-gradient border border-black  text-black px-4 rounded-md " onClick={(e) => { e.preventDefault(); }}>
+                                    Submit
+                                </button>
 
                             </form>
                         </div>

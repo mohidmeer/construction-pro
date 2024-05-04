@@ -40,32 +40,36 @@ function ContactForm() {
         <div className="mx-auto max-w-6xl  flex   lg:flex-row md:flex-row flex-col  ">
             <section className="flex flex-col justify-center gap-8">
                 <div className="flex justify-center items-center">
-                   <div className=" p-4 rounded-lg border">
+                   <div className=" p-4 rounded-lg border-b">
                         <div className="flex flex-col items-center">
-                            <MdPhone size={50} className="bg-green-900 rounded-full text-white p-2"/>
-                            <p className="font-bold">0345383369</p>
+                            <MdPhone size={50} className="bg-primary rounded-full text-white p-2"/>
+                            <p className="font-semibold  ">Phone</p>
+                            <p className="font-bold">561-830-8252</p>
                         </div>
                    </div>
                 </div>
                 <div className="flex justify-center items-center">
-                   <div className=" p-4 rounded-lg border">
+                   <div className=" p-4 rounded-lg border-b">
                         <div className="flex flex-col items-center">
-                            <MdMail size={50} className="bg-green-900 rounded-full text-white p-2"/>
-                            <p className="font-bold">0345383369</p>
+                            
+                            <MdMail size={50} className="bg-primary rounded-full text-white p-2"/>
+                            <p className="font-semibold  ">Email</p>
+                            <p className="font-bold">561-830-8252</p>
                         </div>
                    </div>
                 </div>
                 
                 <div className="flex justify-center items-center">
-                   <div className=" p- rounded-lg border">
+                   <div className=" p- rounded-lg border-b">
                         <div className="flex flex-col items-center justify-center text-center">
-                            <MdBook size={50} className="bg-green-900 rounded-full text-white p-2"/>
+                            <MdBook size={50} className="bg-primary rounded-full text-white p-2"/>
+                            <p className="font-semibold  ">Address</p>
                             <p className="font-bold">South Florida Palm Beach County</p>
                         </div>
                    </div>
                 </div>
             </section>
-            <section class="bg-white dark:bg-gray-900 w-full">
+            <section class="bg-white  w-full">
                 <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
                     <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Contact Us</h2>
                     <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Let’s chat and get a quote!.</p>
