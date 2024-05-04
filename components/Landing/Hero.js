@@ -23,7 +23,7 @@ export default function Hero({ children,locale,form=true,title='New Jersey Trust
                             { form ? 
                             <>
                                 <div>
-                                    <p className="text-white font-bold text-3xl text-left lg:text-center my-10">0% interest <br/>  & Easy payment</p>
+                                    <p className="text-white font-bold text-3xl text-left lg:text-center my-2">0% interest <br/>  & Easy payment</p>
                                 </div>
                                 <Form/>
                             </> :''}

@@ -6,7 +6,7 @@ export default function Service(){
     return(
         <>
         <Head>
-            <title>{'Our Services'}</title>
+            <title>{'BERG | Services'}</title>
             <meta name="description" content={"New Jersey Trusted Roofing Contractor. Protecting what matters the most. Whether you're in need of a full roof replacement or a roof repair, you can coun"} />
             <meta property="og:description" content={"New Jersey Trusted Roofing Contractor. Protecting what matters the most. Whether you're in need of a full roof replacement or a roof repair, you can coun"} />
             {/* <meta property="og:image" content={ogimgurl} />

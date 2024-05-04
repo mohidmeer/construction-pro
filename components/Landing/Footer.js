@@ -60,7 +60,7 @@ export default function Footer({form=true}){
                 </ul>
                 </div>
                 
-                <p className="text-sm text-center ">© 2023 <Link href={'/'}  className="hover:underline">BERG GCC</Link>. All Rights Reserved.
+                <p className="text-sm text-center ">© 2023 <Link href={'/'}  className="hover:underline">BERG CGC</Link>. All Rights Reserved.
                 </p>
             </footer>
         </div>
@@ -71,13 +71,13 @@ export default function Footer({form=true}){
 function Logo() {
 
     return (
-        <Link href={'/'} className="font-bold text-primary bg-white   flex flex-col mt-2">
+        <Link href={'/'} className="font-bold text-primary bg-white  flex flex-col mt-4">
 
-            <Image src={logoSvg} alt="Berg" width={150} className="ml-3" />
-            <div className="p-2">
-                <p className=" tracking-wide">General Contractors</p>
+            <Image src={logoSvg} alt="Berg" width={120} className="ml-6" />
+            <div className="p-1">
+                <p className="">General Contractors</p>
 
-                <div className="text-center flex items-center justify-center gap-4  ">
+                <div className="text-center flex items-center justify-center gap-6">
                 <p>CGC</p>
                 <p>1535671</p>
 
@@ -87,4 +87,3 @@ function Logo() {
         </Link>
     )
 }
-

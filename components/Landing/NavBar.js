@@ -74,13 +74,13 @@ function Menu({ items }) {
 function Logo() {
 
     return (
-        <Link href={'/'} className="font-bold text-primary bg-white  text-hover-effect  flex flex-col">
+        <Link href={'/'} className="font-bold text-primary bg-white  flex flex-col">
 
-            <Image src={logoSvg} alt="Berg" width={150} className="ml-3" />
-            <div className="p-2">
-                <p className=" tracking-wide">General Contractors</p>
+            <Image src={logoSvg} alt="Berg" width={120} className="ml-6" />
+            <div className="p-1">
+                <p className="">General Contractors</p>
 
-                <div className="text-center flex items-center justify-center gap-4  ">
+                <div className="text-center flex items-center justify-center gap-6">
                 <p>CGC</p>
                 <p>1535671</p>
 
