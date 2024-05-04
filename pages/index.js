@@ -33,11 +33,11 @@ export default function Home() {
         {/* <meta property="og:image" content={ogimgurl} />
         <meta property="og:image:width" content="400" />
         <meta property="og:image:height" content="400" /> */}
-        <meta property="og:title" content={'Construction Contractor'} />
+        <meta property="og:title" content={'BERG General Contractor'} />
 
 
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={'Construction Contractor'} />
+        <meta name="twitter:title" content={'BERG General Contractor'} />
         <meta name="twitter:description" content={"New Jersey Trusted Roofing Contractor. Protecting what matters the most. Whether you're in need of a full roof replacement or a roof repair, you can coun"} />
         {/* <meta name="twitter:image" content={ogimgurl} /> */}
       </Head>
