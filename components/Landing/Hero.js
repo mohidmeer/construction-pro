@@ -7,7 +7,7 @@ import { useFormik } from 'formik';
 import validator from "@/utils/FormValidator";
 import { createLead } from "@/api";
 
-export default function Hero({ children,locale,form=true,title='New Jersey Trusted Roofing Contractor'}) {
+export default function Hero({ children,locale,form=true,title='Roofing Consultant'}) {
     return (
         <div className="relative h-[800px]  lg:h-[600px]  bg-center bg-cover bg-no-repeat p-4">
             <div className="absolute  inset-0 bg-[url('../public/images/hero.jpg')] bg-center bg-cover bg-no-repeat brightness-50"></div>
@@ -22,8 +22,8 @@ export default function Hero({ children,locale,form=true,title='New Jersey Trust
                             
                             { form ? 
                             <>
-                                <div>
-                                    <p className="text-white font-bold text-3xl text-left lg:text-center my-2">0% interest <br/>  & Easy payment</p>
+                                <div className="h-20">
+                                    {/* <p className="text-white font-bold text-3xl text-left lg:text-center my-2 opacity-0 select-none">0% interest <br/>  & Easy payment</p> */}
                                 </div>
                                 <Form/>
                             </> :''}
@@ -38,14 +38,14 @@ export default function Hero({ children,locale,form=true,title='New Jersey Trust
 function Cta({locale,title}){
     return (
         <div className="flex flex-col gap-4 max-w-[450px] ">
-            <p className="text-transparent bg-clip-text golden-gradient font-bold ml-auto ">{title}</p>
+            <p className="text-transparent bg-clip-text golden-gradient font-bold mr-auto uppercase ">{title}</p>
             <p className="text-white text-4xl leading-snug lg:text-5xl font-extrabold lg:leading-snug">Protecting what<br/> matters <span className="red-gradient"> the most</span> </p>
             <p className="text-white mt-2 md:block hidden">Whether you&#39;re in need of a full roof replacement or a roof  repair, you can count on our expert team to get the job done.</p>
-            <div className="flex justify-center md:justify-between">
-                <Link href={'#cta'} className="p-4 golden-gradient w-1/2 rounded-lg text-center hidden  md:block  ">
+            <div className="flex justify-center items-center md:justify-between">
+                {/* <Link href={'#cta'} className="p-4 golden-gradient w-1/2 rounded-lg text-center hidden  md:block  ">
                     <span className="font-extrabold text-2xl">GET A QUOTE</span>
                     <p className="text-xs font-bold">Within 15 minutes</p>
-                </Link>
+                </Link> */}
                 <div className="text-white">
                     <p>Or Just <span className="font-extrabold">Text Or Call</span> </p>
                     <div className="flex gap-2 items-center mt-2 cursor-pointer group relative ">
@@ -86,7 +86,7 @@ function Form(){
         <div>
             <div className=" shadow-md relative  ">
                
-                <p className="text-white font-bold text-center red-gradient p-1 ">Get a new roof now <br/> & <span className="underline">delay the payments!</span></p>
+                <p className="text-white font-bold text-center red-gradient p-4  uppercase">Roof Consultant Quote</p>
                 <form className="bg-white p-8" onSubmit={formik.handleSubmit}>
                 {level ===1 ?  
                     <>

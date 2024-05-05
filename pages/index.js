@@ -42,7 +42,7 @@ export default function Home() {
         {/* <meta name="twitter:image" content={ogimgurl} /> */}
       </Head>
     <div className='md:p-0 p-2'>
-      <TopBar locale={locale} />
+      {/* <TopBar locale={locale} /> */}
       <Hero locale={locale} >
         <NavBar locale={locale} />
       </Hero>
