@@ -20,7 +20,7 @@ export default function About(){
             <meta name="twitter:description" content={"New Jersey Trusted Roofing Contractor. Protecting what matters the most. Whether you're in need of a full roof replacement or a roof repair, you can coun"} />
             {/* <meta name="twitter:image" content={ogImageurl} /> */}
           </Head>
-        <div classNameName='md:p-0 p-2'>
+        <div className='md:p-0 p-2'>
           <TopBar locale={locale} />
           <Hero locale={locale} form={false}  >
             <NavBar locale={locale}    />
@@ -39,7 +39,7 @@ export default function About(){
 function AboutUS(){
 
     return(
-        <div classNameName="mx-auto max-w-6xl ">
+        <div className="mx-auto max-w-6xl ">
             
         <div className="2xl:container 2xl:mx-auto lg:py-16 lg:px-20 md:py-12 md:px-6 py-9 px-4  !text-white">
             <div className="flex flex-col lg:flex-row justify-between gap-8">
